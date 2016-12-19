@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat');
+@import 'utils.scss';
+
+// Colours
+$black      : #000000;
+$pale-black : #101010;
+$white      : #ffffff;
+$pale-white : #d4d4d4;
+$gold       : #c4a366;
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 1.2rem;
+
+  @include for-size(phone-only) {
+    font-size: 1.3rem;
+  }
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}
+
+.content {
+  margin: 2.5em;
+  min-height: 105vh;
+
+  @include for-size(phone-only) {
+    margin: 1.5em;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: inline-block;
+
+  @include for-size(phone-only) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  padding: .5em 1.2em;
+}
+nav span:after {
+  transition: width .25s ease-in-out;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: $gold;
+}
+nav span:hover:after { width: 0; }
+
+hr {
+  display: block;
+  margin: 1.625rem auto;
+  height: 1.625rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: Montserrat;
+  color: $pale-black;
+  border: 0;
+
+  &:before {
+    content: "···";
+    letter-spacing: 1em;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'liga', 'clig';
+}
+
+.left-position {
+  float: left;
+  margin: 0 0 0 -2rem;
+  padding: .3rem 2rem 2rem 0;
+}
+
+.right-position {
+  float: right;
+  margin: 0 -3rem 0 0;
+  padding: .3rem 0 2rem 2rem;
+
+  @include for-size(phone-only) {
+    text-align: center;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+figcaption {
+  margin: 1.6rem 0 .8rem 0;
+  text-align: center;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+@import 'landing-page.scss';
+@import 'instructions.scss';
+@import 'footer.scss';

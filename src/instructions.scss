@@ -1,0 +1,40 @@
+.instructions { color: $pale-black; }
+.instructions nav a {
+  color: $pale-black;
+  &:hover { color: lighten($pale-black, 10%); } 
+}
+.instructions footer { border-top: 1px solid $gold; }
+
+.instructions-wrapper {
+  max-width: 600px;
+  margin: 5em auto;
+}
+
+.insutrctions-title {
+  font-size: 3em;
+  text-align: center;
+  color: $black;
+}
+
+.opening-statement {
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  color: $black;
+}
+
+h6 {
+  margin: 2.3rem auto .8rem auto;
+  line-height: 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: .8rem;
+}
+
+blockquote { margin: 1.6rem; }
+blockquote p { font-style: italic; }

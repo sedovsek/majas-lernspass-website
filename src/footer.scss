@@ -1,0 +1,53 @@
+/* ------------- */
+/*     Footer    */
+/* ------------- */
+footer {
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  background-color: $white;
+  color: $pale-black;
+}
+
+.logo {
+  @extend .m-hide-text;
+  flex: 1.5;
+  display: inline-block;
+  height: 300px;
+  background-size: 100%;
+  background-image: url('../img/majas-lernspass-logo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social {
+  flex: 2;
+  margin-right: 2em;
+  text-align: right;
+
+  ul { list-style: none; }
+  li { display: inline-block; }
+
+  h3 {
+    text-decoration: underline;
+    line-height: 1.34em;
+  }
+}
+
+.social-icon {
+  @extend .m-hide-text;
+  transition: border .3s;
+  display: inline-block;
+  padding: 2em;
+  width: 2em;
+  height: 2em;
+  background-size: 70%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid lighten($pale-black, 70%);
+
+  &:hover { border-color: $pale-black; }
+}
+.social-icon-fb    { background-image: url('../img/icons/facebook.svg'); }
+.social-icon-ig    { background-image: url('../img/icons/instagram.svg'); }
+.social-icon-email { background-image: url('../img/icons/email.svg'); }
