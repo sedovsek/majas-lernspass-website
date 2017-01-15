@@ -5,6 +5,7 @@ footer {
   display: flex;
   min-height: 300px;
   align-items: center;
+  border-top: 1px solid $gold;
   background-color: $white;
   color: $pale-black;
 }
@@ -17,7 +18,7 @@ footer {
   background-size: 100%;
   background-image: url('../img/majas-lernspass-logo.png');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
 }
 
 .social {
