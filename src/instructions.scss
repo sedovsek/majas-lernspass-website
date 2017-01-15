@@ -36,5 +36,20 @@ h2 {
   margin-bottom: .8rem;
 }
 
+h3 {
+  margin-top: 2.6rem;
+  margin-bottom: .6rem; 
+}
+
+li { margin-bottom: .657rem; }
+li ol { margin-top: .5rem; }
+
+ol ul {
+  margin-top: .7rem;
+  margin-bottom: 1rem;
+  padding-left: .5rem;
+  list-style-type: none;
+}
+
 blockquote { margin: 1.6rem; }
 blockquote p { font-style: italic; }

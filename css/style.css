@@ -48,7 +48,7 @@ body {
 nav {
   position: absolute;
   top: 1em;
-  right: 1em;
+  left: 1em;
   display: inline-block;
 }
 @media (max-width: 599px) {
@@ -95,9 +95,9 @@ hr:before {
   letter-spacing: 1em;
 }
 
-p {
+p, li {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   -webkit-font-variant-ligatures: common-ligatures;
           font-variant-ligatures: common-ligatures;
   -webkit-font-feature-settings: 'liga', 'clig';
@@ -132,18 +132,18 @@ figcaption {
 }
 
 .landing-page {
-  background-color: #000000;
-  background-image: url("../img/kocke.jpg");
+  background-image: url("../img/photos/darko_skatla.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
-  color: #d4d4d4;
+  color: #101010;
 }
 
 .landing-page nav a {
-  color: #ffffff;
+  color: #000000;
 }
 .landing-page nav a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 .dice-title {
@@ -181,7 +181,7 @@ figcaption {
   font-size: 18px;
   line-height: 32px;
   max-width: 500px;
-  color: #d4d4d4;
+  color: #101010;
 }
 
 button,
@@ -222,7 +222,7 @@ button:focus {
 }
 
 .cta:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 .cta:hover:after {
@@ -280,6 +280,26 @@ h6 {
 h2 {
   margin-top: 4rem;
   margin-bottom: .8rem;
+}
+
+h3 {
+  margin-top: 2.6rem;
+  margin-bottom: .6rem;
+}
+
+li {
+  margin-bottom: .657rem;
+}
+
+li ol {
+  margin-top: .5rem;
+}
+
+ol ul {
+  margin-top: .7rem;
+  margin-bottom: 1rem;
+  padding-left: .5rem;
+  list-style-type: none;
 }
 
 blockquote {

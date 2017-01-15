@@ -47,7 +47,7 @@ body {
 nav {
   position: absolute;
   top: 1em;
-  right: 1em;
+  left: 1em;
   display: inline-block;
 
   @include for-size(phone-only) {
@@ -89,9 +89,9 @@ hr {
   }
 }
 
-p {
+p, li {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   font-variant-ligatures: common-ligatures;
   font-feature-settings: 'liga', 'clig';
 }
