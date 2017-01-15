@@ -132,7 +132,7 @@ figcaption {
 }
 
 .landing-page {
-  background-image: url("../img/photos/darko_skatla.jpg");
+  background-image: url("../img/photos/wurfelticktack-box.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -151,7 +151,7 @@ figcaption {
   display: inline-block;
   width: 14em;
   height: 3.3em;
-  background-image: url("../img/wurfel-01.svg");
+  background-image: url("../img/wurfelticktack-logo.svg");
   background-repeat: no-repeat;
 }
 @media (max-width: 599px) {
