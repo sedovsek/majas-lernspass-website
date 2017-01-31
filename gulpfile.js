@@ -3,16 +3,46 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     compass = require('gulp-compass'),
     postcss = require('gulp-postcss'),
+    data = require('gulp-data'),
+    clean = require('gulp-clean'),
+    nunjucksRender = require('gulp-nunjucks-render'),
     autoprefixer = require('autoprefixer');
 
-gulp.watch('src/*.scss', ['default']);
+function getDataForFile(file) {
+  return file.relative.split('.')[0];
+}
 
-gulp.task('default', function() {
-    gulp.src('./src/style.scss')
-        .pipe(compass({
-            css: 'css',
-            sass: 'src'
-        }))
-        .pipe(postcss([ autoprefixer({ browsers: ['last 12 versions'] }) ]))
-        .pipe(gulp.dest('./css'));
+gulp.task('cleanup', function() {
+  gulp.src('./dist/*.html', { read: false })
+      .pipe(clean());
+
+  gulp.src('./dist/css/*.css', { read: false })
+      .pipe(clean());
 });
+
+gulp.task('nunjucks', function() {
+  gulp.src('./src/templates/*.nunjucks')
+      .pipe(data(function (file) {
+        return require('./src/data/data.json')[getDataForFile(file)];
+      }))
+      .pipe(data(getDataForFile))
+      .pipe(nunjucksRender({
+        path: ['src/templates']
+      }))
+      .pipe(gulp.dest('./dist'))
+});
+
+gulp.task('sass', function() {
+    gulp.src('./src/sass/style.scss')
+        .pipe(compass({
+            css: 'dist/css',
+            sass: 'src/sass'
+        }))
+        .pipe(postcss([ autoprefixer({ browsers: ['last 5 versions'] }) ]))
+        .pipe(gulp.dest('./dist/css/'));
+});
+
+gulp.watch('src/pages/*.nunjucks', ['cleanup', 'nunjucks']);
+gulp.watch('src/sass/*.scss', ['sass']);
+
+gulp.task('default', ['cleanup', 'nunjucks', 'sass']);

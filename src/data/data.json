@@ -1,0 +1,21 @@
+{
+  "about": {
+    "title": "About about"
+  },
+  "maja": {
+    "title": "About majni"
+  },
+  "index": {
+    "title": "About index",
+    "items": [
+      {
+        "id": 1,
+        "title": "shoes"
+      },
+      {
+        "id": 2,
+        "title": "cube"
+      }
+    ]
+  }
+}

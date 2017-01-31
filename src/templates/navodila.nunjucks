@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>WürfelTickTack &mdash; navodila za uporabo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="img/png" href="./img/icons/favico.png">
-</head>
+{% include "includes/header.nunjucks" %}
+
 <body class="instructions">
 
-<nav>
-  <a href="index.html" class="cta" title="WürfelTickTack &mdash; Majas Lernspaß"><span>Kocke</span></a>
-  <a href="navodila.html" class="cta" title="WürfelTickTack navodila"><span>Navodila</span></a>
-  <a href="maja.html" class="cta" title="Maja Kavčič &mdash; Majas Lernspaß, avtorica"><span>Maja</span></a>
-</nav>
+{% include "includes/nav.nunjucks" %}
 
 <section class="content">
   <div class="instructions-wrapper">
@@ -213,32 +202,4 @@
   </div>
 </section>
 
-<!-- Move to footer -->
-<footer>
-  <h2 class="logo">Majas Lernspaß</h2>
-
-  <div class="social">
-    <h3>
-      Sledi Majinim<br/>
-      dogodivščinam…
-    </h3>
-
-    <ul>
-      <li>
-        <a class="social-icon social-icon-fb" href="https://www.facebook.com/MajasLernspass/" title="Majas Lernspaß Facebook stran">
-          Majas Lernspaß Facebook stran
-        </a>
-      </li>
-      <li>
-        <a class="social-icon social-icon-ig" href="https://www.instagram.com/majaslernspass/" title="Majas Lernspaß na Instagram-u">
-          Majas Lernspaß na Instagram-u
-        </a>
-      </li>
-      <li>
-        <a class="social-icon social-icon-email" href="mailto:info@majas-lernspass.si" title="Počji Maji email" target="_blank">e-mail</a>
-      </li>
-    </ul>
-  </div>
-</footer>
-</body>
-</html>
+{% include "includes/footer.nunjucks" %}
