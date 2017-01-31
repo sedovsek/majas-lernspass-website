@@ -1,0 +1,399 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lora|Montserrat");
+.m-hide-text, .logo, .social-icon {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 1.2rem;
+}
+@media (max-width: 599px) {
+  html {
+    font-size: 1.3rem;
+  }
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}
+
+.content {
+  margin: 3.5em 2.5em;
+  min-height: 105vh;
+}
+@media (max-width: 599px) {
+  .content {
+    margin: 1.5em;
+  }
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  padding-top: .6em;
+  padding-bottom: .8em;
+  padding-right: 3.5em;
+  display: inline-block;
+  width: 100%;
+  background-color: #efe5d4;
+  text-align: right;
+}
+@media (max-width: 599px) {
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  padding: .5em 1.2em;
+}
+
+nav span:after {
+  transition: width .25s ease-in-out;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #c4a366;
+}
+
+nav span:hover:after {
+  width: 0;
+}
+
+hr {
+  display: block;
+  margin: 1.625rem auto;
+  height: 1.625rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: Montserrat;
+  color: #101010;
+  border: 0;
+}
+hr:before {
+  content: "···";
+  letter-spacing: 1em;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'liga', 'clig';
+}
+
+.left-position {
+  float: left;
+  margin: 0 0 0 -2rem;
+  padding: .3rem 2rem 2rem 0;
+}
+
+.right-position {
+  float: right;
+  margin: 0 -3rem 0 0;
+  padding: .3rem 0 2rem 2rem;
+}
+@media (max-width: 599px) {
+  .right-position {
+    text-align: center;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+figcaption {
+  margin: 1.2rem 0 .8rem 0;
+  text-align: center;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+.landing-page {
+  background-image: url("../img/photos/wurfelticktack-box.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #101010;
+}
+
+.landing-page nav a {
+  color: #000000;
+}
+.landing-page nav a:hover {
+  color: #000000;
+}
+
+.dice-title {
+  position: relative;
+  display: inline-block;
+  width: 14em;
+  height: 3.3em;
+  background-image: url("../img/wurfelticktack-logo.svg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 599px) {
+  .dice-title {
+    width: 10em;
+    height: 2.357em;
+  }
+}
+
+.dice-title:after {
+  transition: opacity .5s ease-in-out;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  height: 1px;
+  background-color: #c4a366;
+}
+
+.dice-title:hover:after {
+  opacity: 0;
+}
+
+.dice-intro {
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 500px;
+  color: #101010;
+}
+
+button,
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .7rem;
+  line-height: 1rem;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 1.5em;
+  height: 40px;
+  padding: 0 30px;
+  color: #c4a366;
+  border: 2px solid #101010;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: 1px solid #c4a366;
+}
+
+.cta span a {
+  color: #c4a366;
+  text-decoration: none;
+}
+
+.cta:hover span a {
+  color: #000000;
+}
+
+.cta span {
+  transition: all .3s;
+  will-change: transform;
+  display: inline-block;
+  position: relative;
+}
+
+.cta:hover span {
+  -webkit-transform: translateX(-4px);
+      -ms-transform: translateX(-4px);
+          transform: translateX(-4px);
+}
+
+.cta:hover {
+  color: #000000;
+}
+
+.cta:hover:after {
+  content: '→';
+  position: absolute;
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+
+a.cta:hover:after {
+  margin-top: .3em;
+}
+
+.instructions {
+  color: #101010;
+}
+
+.instructions nav a {
+  color: #101010;
+}
+.instructions nav a:hover {
+  color: #292929;
+}
+
+.instructions footer {
+  border-top: 1px solid #c4a366;
+}
+
+.instructions-wrapper {
+  max-width: 600px;
+  margin: 5em auto;
+}
+
+.insutrctions-title {
+  font-size: 3em;
+  text-align: center;
+  color: #000000;
+}
+
+.opening-statement {
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  color: #000000;
+}
+
+h6 {
+  margin: 2.3rem auto .8rem auto;
+  line-height: 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: .8rem;
+}
+
+h3 {
+  margin-top: 2.6rem;
+  margin-bottom: .6rem;
+}
+
+.internal-link {
+  display: block;
+  margin-top: -95px;
+  padding-bottom: 95px;
+}
+
+li {
+  margin-bottom: .657rem;
+}
+
+li ol {
+  margin-top: .5rem;
+}
+
+ol ul {
+  margin-top: .7rem;
+  margin-bottom: 1rem;
+  padding-left: .5rem;
+  list-style-type: none;
+}
+
+blockquote {
+  margin: 1.6rem;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+/* ------------- */
+/*     Footer    */
+/* ------------- */
+footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #c4a366;
+  background-color: #ffffff;
+  color: #101010;
+}
+
+.logo {
+  -webkit-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  display: inline-block;
+  height: 300px;
+  background-size: 100%;
+  background-image: url("../img/majas-lernspass-logo.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+.social {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 2em;
+  text-align: right;
+}
+.social ul {
+  list-style: none;
+}
+.social li {
+  display: inline-block;
+}
+.social h3 {
+  text-decoration: underline;
+  line-height: 1.34em;
+}
+
+.social-icon {
+  transition: border .3s;
+  display: inline-block;
+  padding: 2em;
+  width: 2em;
+  height: 2em;
+  background-size: 70%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #c3c3c3;
+}
+.social-icon:hover {
+  border-color: #101010;
+}
+
+.social-icon-fb {
+  background-image: url("../img/icons/facebook.svg");
+}
+
+.social-icon-ig {
+  background-image: url("../img/icons/instagram.svg");
+}
+
+.social-icon-email {
+  background-image: url("../img/icons/email.svg");
+}
