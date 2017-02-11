@@ -36,11 +36,12 @@ body {
 
 .content {
   margin: 3.5em 2.5em;
-  min-height: 105vh;
+  min-height: 95vh;
 }
 @media (max-width: 599px) {
   .content {
-    margin: 1.5em;
+    margin: 3em 1.5em;
+    min-height: 78vh;
   }
 }
 
@@ -59,6 +60,7 @@ nav {
 @media (max-width: 599px) {
   nav {
     width: 100%;
+    padding-right: 0;
     text-align: center;
   }
 }
@@ -77,6 +79,10 @@ nav span:after {
   width: 100%;
   height: 1px;
   background-color: #c4a366;
+}
+
+nav .nav-active span:after {
+  height: 0;
 }
 
 nav span:hover:after {
@@ -136,9 +142,15 @@ figcaption {
 .landing-page {
   background-image: url("../img/photos/wurfelticktack-box.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: -5em 2em;
   background-size: cover;
   color: #101010;
+}
+@media (max-width: 599px) {
+  .landing-page {
+    background-position: 60% 85%;
+    background-size: 160%;
+  }
 }
 
 .landing-page nav a {
@@ -224,24 +236,24 @@ button:focus {
   position: relative;
 }
 
-.cta:hover span {
+.cta:not(.nav-active):hover span {
   -webkit-transform: translateX(-4px);
       -ms-transform: translateX(-4px);
           transform: translateX(-4px);
 }
 
-.cta:hover {
+.cta:not(.nav-active):hover {
   color: #000000;
 }
 
-.cta:hover:after {
+.cta:not(.nav-active):hover:after {
   content: '→';
   position: absolute;
   font-size: 1.2em;
   line-height: 1.1em;
 }
 
-a.cta:hover:after {
+a.cta:not(.nav-active):hover:after {
   margin-top: .3em;
 }
 
@@ -264,6 +276,12 @@ a.cta:hover:after {
   max-width: 600px;
   margin: 5em auto;
 }
+@media (max-width: 599px) {
+  .instructions-wrapper {
+    margin-top: 7.5em;
+    font-size: 60%;
+  }
+}
 
 .insutrctions-title {
   font-size: 3em;
@@ -273,6 +291,9 @@ a.cta:hover:after {
 
 .opening-statement {
   margin-bottom: 1.6rem;
+  padding: 1rem;
+  border-top: 0.5px solid #c4a366;
+  border-bottom: 0.5px solid #c4a366;
   font-size: 1.2rem;
   line-height: 1.4em;
   color: #000000;
@@ -307,13 +328,14 @@ li {
 }
 
 li ol {
+  padding-left: 1rem;
   margin-top: .5rem;
 }
 
 ol ul {
   margin-top: .7rem;
   margin-bottom: 1rem;
-  padding-left: .5rem;
+  padding-left: .2rem;
   list-style-type: none;
 }
 
