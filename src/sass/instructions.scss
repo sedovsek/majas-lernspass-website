@@ -8,6 +8,11 @@
 .instructions-wrapper {
   max-width: 600px;
   margin: 5em auto;
+
+  @include for-size(phone-only) {
+    margin-top: 7.5em;
+    font-size: 60%;
+  }
 }
 
 .insutrctions-title {
@@ -18,6 +23,9 @@
 
 .opening-statement {
   margin-bottom: 1.6rem;
+  padding: 1rem;
+  border-top: .5px solid $gold;
+  border-bottom: .5px solid $gold;
   font-size: 1.2rem;
   line-height: 1.4em;
   color: $black;
@@ -48,12 +56,16 @@ h3 {
 }
 
 li { margin-bottom: .657rem; }
-li ol { margin-top: .5rem; }
+
+li ol {
+  padding-left: 1rem;
+  margin-top: .5rem;
+}
 
 ol ul {
   margin-top: .7rem;
   margin-bottom: 1rem;
-  padding-left: .5rem;
+  padding-left: .2rem;
   list-style-type: none;
 }
 

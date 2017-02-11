@@ -1,9 +1,14 @@
 .landing-page {
   background-image: url('../img/photos/wurfelticktack-box.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: -5em 2em;
   background-size: cover;
   color: $pale-black;
+
+  @include for-size(phone-only) {
+    background-position: 60% 85%;
+    background-size: 160%;
+  }
 }
 .landing-page nav a {
   color: $black;
@@ -71,13 +76,14 @@ button:focus { outline: 1px solid $gold; }
   display: inline-block;
   position: relative;
 }
-.cta:hover span { transform: translateX(-4px); }
-.cta:hover { color: $black; }
-.cta:hover:after {
+
+.cta:not(.nav-active):hover span { transform: translateX(-4px); }
+.cta:not(.nav-active):hover { color: $black; }
+.cta:not(.nav-active):hover:after {
   content: '→';
   position: absolute;
   font-size: 1.2em;
   line-height: 1.1em;
 }
 
-a.cta:hover:after { margin-top: .3em; }
+a.cta:not(.nav-active):hover:after { margin-top: .3em; }

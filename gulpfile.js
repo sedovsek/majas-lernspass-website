@@ -42,7 +42,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.watch('src/pages/*.nunjucks', ['cleanup', 'nunjucks']);
+gulp.watch('src/templates/**/*', ['nunjucks']);
 gulp.watch('src/sass/*.scss', ['sass']);
 
 gulp.task('default', ['cleanup', 'nunjucks', 'sass']);

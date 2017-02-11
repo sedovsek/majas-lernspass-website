@@ -1,21 +1,14 @@
 {
-  "about": {
-    "title": "About about"
+  "index": {
+    "id": "index",
+    "title": "WürfelTickTack – Majas Lernspaß"
   },
   "maja": {
-    "title": "About majni"
+    "id": "maja",
+    "title": "Maja Kavčič – Majas Lernspaß"
   },
-  "index": {
-    "title": "About index",
-    "items": [
-      {
-        "id": 1,
-        "title": "shoes"
-      },
-      {
-        "id": 2,
-        "title": "cube"
-      }
-    ]
+  "navodila": {
+    "id": "navodila",
+    "title": "WürfelTickTack – navodila za uporabo"
   }
 }

@@ -37,10 +37,11 @@ body {
 
 .content {
   margin: 3.5em 2.5em;
-  min-height: 105vh;
+  min-height: 95vh;
 
   @include for-size(phone-only) {
-    margin: 1.5em;
+    margin: 3em 1.5em;
+    min-height: 78vh;
   }
 }
 
@@ -58,6 +59,7 @@ nav {
 
   @include for-size(phone-only) {
     width: 100%;
+    padding-right: 0;
     text-align: center;
   }
 }
@@ -76,6 +78,7 @@ nav span:after {
   height: 1px;
   background-color: $gold;
 }
+nav .nav-active span:after { height: 0; }
 nav span:hover:after { width: 0; }
 
 hr {
