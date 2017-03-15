@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>WürfelTickTack – naročilo</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="img/png" href="./img/icons/favico.png">
+</head>
+
+<body class="instructions">
+
+<section class="content">
+  <div class="instructions-wrapper">
+    <h1 class="dice-title dice-title-bigger dice-title-centered m-hide-text">WürfelTickTack</h1>
+    <hr/>
+    <form id="purchase-form" class="purchase-form" method="POST" action="http://formspree.io/info@majas-lernspass.si">
+      <label for="cena" class="text-label"><strong>Cena</strong></label>
+      <div class="form-price">
+        <strong id="price">50,00 €</strong>
+        <small id="delivery-price-wrapper">(+ poštnina: 5,00 €)<sup title="možen tudi osebni prevzem v Ljubljani">*</sup></small>
+      </div>
+
+      <label for="name" class="text-label">Vaše ime</label>
+      <input id="name" class="text-input" type="text" placeholder="Mojca Novak" required name="Ime in priimek:"/>
+      <br/>
+
+      <label for="naslov" class="text-label">Ulica in hišna št.</label>
+      <input id="naslov" class="text-input" type="text" placeholder="Gosposvetska 13" required name="Ulica in hišna št.:"/>
+      <br/>
+
+      <label for="mesto" class="text-label">Poštna številka in kraj/mesto</label>
+      <input id="mesto" class="text-input" type="text" placeholder="1000 Ljubljana" required name="Poštna številka in kraj/mesto:"/>
+      <br/>
+
+      <label for="email" class="text-label">E-mail</label>
+      <input id="email" class="text-input" type="email" placeholder="mojca.novak@gmail.com" required name="E-mail:"/>
+      <br/>
+
+      <label for="delivery" class="text-label">Dostava</label>
+      <div id="delivery" class="delivery-option-wrapper">
+        <input id="delivery-post" type="radio" name="delivery" checked>
+          <label class="label-radio" for="delivery-post">po pošti</label>
+        </input>
+
+        <br/>
+
+        <input id="delivery-pickup" type="radio" name="delivery">
+          <label class="label-radio" for="delivery-pickup">osebni prevzem v centru Ljubljane</label>
+        </input>
+      </div>
+
+      <label for="cena" class="text-label purchase-comment-label"><small>Opomba</small></label>
+      <textarea class="purchase-comment" id="naslov" type="text" placeholder="Nariši dinozavra!"></textarea>
+
+      <button id="purchase-button"
+              type="submit"
+              class="cta cta-centered cta-disabled"
+              title="Nakup igre WürfelTickTack"><span>Naročam WürfelTickTack</span></button>
+
+      <p class="purchase-notice">Po prejetem naročilu vam bomo poslali podatke za plačilo</p>
+      <p class="purchase-notice">* možen osebni prevzem v Ljubljani</p>
+
+      <!-- https://formspree.io/ -->
+      <input type="hidden" name="_subject" value="Naročilo: WürfelTickTack" />
+      <input type="hidden" name="_next" value="hvala.html" />
+    </form>
+
+    <hr/>
+
+    <div class="purchase-help">
+      <h3>Imate težave z naročilom?</h3>
+      <p>
+        Za pomoč me kontaktirajte na <a href="mailto:info@majas-lernspass.si" title="Maja Kavčič">info@majas-lernspass.si</a>
+        ali po telefonu, <strong>+386 31 664 871</strong> &mdash;Maja Kavčič
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<script type="text/javascript">
+  // Form validation
+  var purchaseButton = document.getElementById('purchase-button');
+  var purchaseForm = document.getElementById('purchase-form');
+
+  var formInputs = document.getElementsByTagName('input'); 
+  for (i=0; i < formInputs.length; i++) {
+    formInputs[i].addEventListener('keyup', checkFormValidity);
+  }
+
+  function checkFormValidity() {
+    purchaseButton.classList.toggle('cta-disabled', !purchaseForm.checkValidity())
+  }
+
+  checkFormValidity();
+
+  // Price calculation
+  var shippingPrice   = document.getElementById('delivery-price-wrapper');
+  var deliveryPickup  = document.getElementById('delivery-pickup');
+  var deliveryOptions = document.getElementById('delivery');
+  deliveryOptions.addEventListener('change', calculatePrice);
+
+  function calculatePrice() {
+    shippingPrice.classList.toggle('is-invisible', deliveryPickup.checked);
+  }
+  
+  calculatePrice();
+</script>
+
+</body>
+</html>
