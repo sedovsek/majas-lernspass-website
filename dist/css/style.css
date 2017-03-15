@@ -10,6 +10,10 @@
   visibility: hidden;
 }
 
+.is-centered {
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -565,6 +569,18 @@ footer {
 
 .social-icon-ig {
   background-image: url("../img/icons/instagram.svg");
+}
+
+.social-icon-linkedin {
+  background-image: url("../img/icons/linkedin.svg");
+}
+
+.social-icon-twitter {
+  background-image: url("../img/icons/twitter.svg");
+}
+
+.social-icon-gplus {
+  background-image: url("../img/icons/gplus.svg");
 }
 
 .social-icon-email {

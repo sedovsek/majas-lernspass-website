@@ -14,5 +14,9 @@
   "nakup": {
     "id": "nakup",
     "title": "WürfelTickTack – naročilo"
+  },
+  "hvala": {
+    "id": "index",
+    "title": "WürfelTickTack – hvala za nakup!"
   }
 }
