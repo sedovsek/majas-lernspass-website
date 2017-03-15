@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.is-invisible {
+  visibility: hidden;
+}
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -45,6 +49,11 @@ body {
   }
 }
 
+.content-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
   z-index: 1;
   position: fixed;
@@ -76,17 +85,14 @@ nav span:after {
   position: absolute;
   left: 0;
   bottom: 0px;
-  width: 100%;
+  width: 0;
   height: 1px;
   background-color: #c4a366;
 }
 
-nav .nav-active span:after {
-  height: 0;
-}
-
+.nav-active span:after,
 nav span:hover:after {
-  width: 0;
+  width: 100%;
 }
 
 hr {
@@ -102,6 +108,7 @@ hr {
 }
 hr:before {
   content: "···";
+  margin-left: 1em;
   letter-spacing: 1em;
 }
 
@@ -120,8 +127,9 @@ p, li {
 
 .right-position {
   float: right;
-  margin: 0 -3rem 0 0;
-  padding: .3rem 0 2rem 2rem;
+  margin: -.6rem -3rem 0 .5rem;
+  padding: .3rem 0 0 0;
+  text-align: center;
 }
 @media (max-width: 599px) {
   .right-position {
@@ -130,6 +138,10 @@ p, li {
     margin: 0;
     padding: 0;
   }
+}
+
+.inline-position img {
+  display: inline-block;
 }
 
 figcaption {
@@ -175,12 +187,28 @@ figcaption {
   }
 }
 
+.dice-title-centered {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 599px) {
+  .dice-title-bigger {
+    -webkit-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+            transform: scale(1.6);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+}
+
 .dice-title:after {
   transition: opacity .5s ease-in-out;
   content: '';
   position: absolute;
   left: 0;
-  bottom: 12px;
+  bottom: .45em;
   width: 100%;
   height: 1px;
   background-color: #c4a366;
@@ -236,7 +264,7 @@ button:focus {
   position: relative;
 }
 
-.cta:not(.nav-active):hover span {
+.cta:not(.nav-active):not(.cta-disabled):hover span {
   -webkit-transform: translateX(-4px);
       -ms-transform: translateX(-4px);
           transform: translateX(-4px);
@@ -246,11 +274,21 @@ button:focus {
   color: #000000;
 }
 
-.cta:not(.nav-active):hover:after {
+.cta:not(.nav-active):not(.cta-disabled):hover:after {
   content: '→';
   position: absolute;
   font-size: 1.2em;
   line-height: 1.1em;
+}
+
+.cta-centered {
+  margin: 3.5em auto 0 auto;
+  display: inherit;
+}
+
+.cta-disabled span,
+.cta-disabled span:hover {
+  color: #999999;
 }
 
 a.cta:not(.nav-active):hover:after {
@@ -347,40 +385,147 @@ blockquote p {
   font-style: italic;
 }
 
+.purchase-form {
+  width: 30em;
+}
+.purchase-form .text-label {
+  display: inline-block;
+  width: 14em;
+  margin: 0 1em .5em 0;
+  vertical-align: middle;
+  text-align: right;
+}
+.purchase-form .delivery-option-wrapper,
+.purchase-form .form-price,
+.purchase-form .text-input {
+  display: inline-block;
+  margin-bottom: .5em;
+  padding: .5em .6em;
+  vertical-align: middle;
+}
+.purchase-form .text-input {
+  width: 16em;
+  border: .1em solid #ccc;
+  border-radius: .5em;
+  box-shadow: inset 0 .1em .2em #ddd;
+}
+.purchase-form .delivery-option-wrapper,
+.purchase-form .form-price {
+  padding-left: 0;
+}
+.purchase-form .delivery-option-wrapper {
+  font-size: .7em;
+}
+.purchase-form .label-radio {
+  padding-left: .3em;
+}
+.purchase-form .purchase-comment-label {
+  vertical-align: top;
+}
+.purchase-form .purchase-comment {
+  width: 20em;
+  height: 5em;
+}
+@media (max-width: 599px) {
+  .purchase-form {
+    width: auto;
+  }
+  .purchase-form label,
+  .purchase-form .text-input {
+    display: block;
+    width: 100%;
+  }
+  .purchase-form label {
+    text-align: left;
+    font-size: 1.6em;
+  }
+  .purchase-form .text-input {
+    height: 3em;
+    font-size: 1.25em;
+  }
+}
+
+.purchase-notice {
+  text-align: center;
+}
+
+.purchase-notice,
+.purchase-help {
+  font-size: .7em;
+  color: #101010;
+}
+@media (max-width: 599px) {
+  .purchase-notice,
+  .purchase-help {
+    font-size: 1em;
+  }
+}
+
+.purchase-notice + .purchase-notice {
+  margin-top: -1.8em;
+}
+
 /* ------------- */
 /*     Footer    */
 /* ------------- */
 footer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 300px;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+  display: block;
+  min-height: 370px;
   border-top: 1px solid #c4a366;
   background-color: #ffffff;
   color: #101010;
 }
 
 .logo {
-  -webkit-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
-  display: inline-block;
-  height: 300px;
-  background-size: 100%;
-  background-image: url("../img/majas-lernspass-logo.png");
+  margin: 2em auto;
+  padding: 0;
+  display: block;
+  width: 10em;
+  height: 4em;
+  background-size: cover;
+  background-image: url("../img/majas-lernspass-logo-transparent.png");
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: center;
+}
+.logo a {
+  display: block;
+  height: 100%;
+}
+
+.footer-info {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+}
+.footer-info a {
+  color: #c4a366;
+}
+
+.copyright {
+  display: inline-block;
+  padding-left: .8em;
+  font-size: .75em;
+}
+.copyright:before {
+  content: "|";
+  padding-right: .7em;
+}
+@media (max-width: 900px) {
+  .copyright {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+  }
+  .copyright:before {
+    display: none;
+  }
 }
 
 .social {
-  -webkit-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  margin-right: 2em;
-  text-align: right;
+  position: absolute;
+  right: 2em;
+  bottom: -1em;
 }
 .social ul {
   list-style: none;
@@ -388,17 +533,23 @@ footer {
 .social li {
   display: inline-block;
 }
-.social h3 {
-  text-decoration: underline;
-  line-height: 1.34em;
+@media (max-width: 599px) {
+  .social {
+    position: static;
+    margin-top: -1.6em;
+    text-align: center;
+  }
+  .social ul {
+    padding: 0;
+  }
 }
 
 .social-icon {
   transition: border .3s;
   display: inline-block;
-  padding: 2em;
-  width: 2em;
-  height: 2em;
+  padding: 1.8em;
+  width: 1.8em;
+  height: 1.8em;
   background-size: 70%;
   background-position: 50% 50%;
   background-repeat: no-repeat;

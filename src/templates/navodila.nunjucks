@@ -30,10 +30,15 @@
       Trajanje igre je neomejeno. Omejeni ste le pri izvajanju govorne vaje ali če uporabite peščeno uro kot omejitev za čas, znotraj katerega opravljate določeno nalogo. Igra se lahko uporablja v številnih različicah, tako v pisni kot ustni obliki. Pri tem ne pozabite, da sta razmišljanje zunaj okvirjev in domišljija zelo pomembni, če ne celo ključni lastnosti lahkotnega in brezskrbnega učenja.
     </p>
 
+    <button class="cta cta-centered" title="Nakup igre WürfelTickTack"><span><a href="nakup.html" title="Kupi WürfelTickTack" target="_blank">Nakup</a></span></button>
+
     <h2><a class="internal-link" name="vsebina"></a>VSEBINA:</h2>
     <figure class="right-position">
-      <img src="./img/photos/kocke-glagoli.jpg" alt="Kocke, glagoli" style="height: 300px;"/>
+      <img src="./img/photos/kocke-glagoli.jpg" alt="Kocke, glagoli" style="height: 250px;"/>
       <figcaption>Kocke glagolov/aktivnosti</figcaption>
+
+      <img src="./img/photos/kocke-predmeti.jpg" alt="Kocke, predmeti" style="height: 250px;"/>
+      <figcaption>Kocke samostalnikov/predmetov</figcaption>
     </figure>
     <ul>
       <li>
@@ -79,10 +84,12 @@
         peščena ura: namenjena je uporabi pri izvedbi 2,5-minutne govorne vaje ali kot pripomoček za časovno omejitev opravljanja določene naloge.
       </li>
     </ul>
-    <!-- <figure class="right-position">
-        <img src="./img/photos/kocke-predmeti.jpg" alt="Kocke, glagoli" style="height: 326px;"/>
-        <figcaption>Kocke samostalnikov/predmetov</figcaption>
-      </figure> -->
+    <figure class="inline-position">
+      <img src="./img/photos/kocka-wir.jpg"    alt="Kocka, wir"    style="width: 32.5%;"/>
+      <img src="./img/photos/kocka-wollen.jpg" alt="Kocka, wollen" style="width: 32.5%;"/>
+      <img src="./img/photos/kocka-futur.jpg"  alt="Kocka, futur"  style="width: 32.5%;"/>
+      <figcaption>Primeri velikih kock</figcaption>
+    </figure>
 
     <h2><a class="internal-link" name="cilji-igre"></a>CILJI IGRE:</h2>
     <blockquote>
@@ -94,6 +101,8 @@
     <p>
       Ob uporabi pričujoče igre oz. didaktičnega pripomočka ne boste zgolj pridobili novih znanj s področja nemškega besedišča in slovnice, ampak boste svoje obstoječe znanje nemškega jezika na zabaven način celostno osvežili, utrdili in nadgradili.
     </p>
+
+    <button class="cta cta-centered" title="Nakup igre WürfelTickTack"><span><a href="nakup.html" title="Kupi WürfelTickTack" target="_blank">Nakup</a></span></button>
 
     <h2><a class="internal-link" name="ucne-razlicice"></a>UČNE RAZLIČICE:</h2>
     <p>
@@ -175,30 +184,8 @@
       Vzemite 6 majhnih kock z glagoli/aktivnostmi ali s samostalniki/predmeti ali cel set 12 majhnih kock ter list papirja in pisalo. Vrzite kocke, poglejte, kaj ste dobili na podlagi meta, zaprite oči, preštejte do 10 in si zapomnite čim več videnega. Obrnite se vstran od kock, kjer naj vas čakata list papirja in pisalo. Na list papirja zapišite, kar ste videli, nato se obrnite h kockam in preverite, ali ste pravilno zapisali.
     </p>
 
+    <button class="cta cta-centered" title="Nakup igre WürfelTickTack"><span><a href="nakup.html" title="Kupi WürfelTickTack" target="_blank">Nakup</a></span></button>
 
-    <h2>Majniki &mdash; večje kocke</h2>
-    <p>
-      Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.
-    </p>
-    <blockquote>
-      <p>
-        Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      <cite>&mdash;Maja Kavčič</cite>
-    </blockquote>
-    <p>
-      Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.
-    </p>
-
-    <figure class="left-position">
-      <img src="./img/photos/sample-image-1.jpg" alt="Kocke, primer" style="height: 326px;"/>
-      <figcaption>Primer kock pridevnikov</figcaption>
-    </figure>
-    <p>
-      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-    </p>
-    <p>
-      Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.
-    </p>
   </div>
 </section>
 

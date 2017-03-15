@@ -1,0 +1,19 @@
+{% include "includes/header.nunjucks" %}
+
+<body class="instructions">
+
+{% include "includes/nav.nunjucks" %}
+
+<section class="content">
+  <div class="instructions-wrapper">
+    <h1 class="insutrctions-title">WürfelTickTack &mdash;<br/> Hvala za nakup!</h1>
+    <hr>
+    <p>
+      <center>Bi o svojem nakupu obvestil-a prijatelje?</center>
+
+    </p>
+
+  </div>
+</section>
+
+{% include "includes/footer.nunjucks" %}

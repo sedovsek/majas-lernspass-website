@@ -28,12 +28,22 @@
     height: 2.357em;
   }
 }
+.dice-title-centered {
+  display: block;
+  margin: 0 auto;
+}
+.dice-title-bigger {
+  @include for-size(phone-only) {
+    transform: scale(1.6);
+    transform-origin: 0 0;
+  }
+}
 .dice-title:after {
   transition: opacity .5s ease-in-out;
   content: '';
   position: absolute;
   left: 0;
-  bottom: 12px;
+  bottom: .45em;
   width: 100%;
   height: 1px;
   background-color: $gold;
@@ -77,13 +87,25 @@ button:focus { outline: 1px solid $gold; }
   position: relative;
 }
 
-.cta:not(.nav-active):hover span { transform: translateX(-4px); }
+.cta:not(.nav-active):not(.cta-disabled):hover span { transform: translateX(-4px); }
 .cta:not(.nav-active):hover { color: $black; }
-.cta:not(.nav-active):hover:after {
+.cta:not(.nav-active):not(.cta-disabled):hover:after {
   content: '→';
   position: absolute;
   font-size: 1.2em;
   line-height: 1.1em;
+}
+
+// part of instructions page
+.cta-centered {
+  margin: 3.5em auto 0 auto;
+  display: inherit;
+}
+
+// diabled form
+.cta-disabled span,
+.cta-disabled span:hover {
+  color: $grey;
 }
 
 a.cta:not(.nav-active):hover:after { margin-top: .3em; }

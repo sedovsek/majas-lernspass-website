@@ -10,5 +10,9 @@
   "navodila": {
     "id": "navodila",
     "title": "WürfelTickTack – navodila za uporabo"
+  },
+  "nakup": {
+    "id": "nakup",
+    "title": "WürfelTickTack – naročilo"
   }
 }

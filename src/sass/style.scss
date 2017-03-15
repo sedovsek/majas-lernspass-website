@@ -7,6 +7,7 @@ $pale-black : #101010;
 $white      : #ffffff;
 $pale-white : #d4d4d4;
 $gold       : #c4a366;
+$grey       : #999999;
 
 * {
   box-sizing: border-box;
@@ -44,6 +45,10 @@ body {
     min-height: 78vh;
   }
 }
+.content-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 nav {
   z-index: 1;
@@ -74,12 +79,14 @@ nav span:after {
   position: absolute;
   left: 0;
   bottom: 0px;
-  width: 100%;
+  width: 0;
   height: 1px;
   background-color: $gold;
 }
-nav .nav-active span:after { height: 0; }
-nav span:hover:after { width: 0; }
+.nav-active span:after,
+nav span:hover:after {
+  width: 100%;
+}
 
 hr {
   display: block;
@@ -94,6 +101,7 @@ hr {
 
   &:before {
     content: "···";
+    margin-left: 1em;
     letter-spacing: 1em;
   }
 }
@@ -113,8 +121,9 @@ p, li {
 
 .right-position {
   float: right;
-  margin: 0 -3rem 0 0;
-  padding: .3rem 0 2rem 2rem;
+  margin: -.6rem -3rem 0 .5rem;
+  padding: .3rem 0 0 0;
+  text-align: center;
 
   @include for-size(phone-only) {
     text-align: center;
@@ -122,6 +131,10 @@ p, li {
     margin: 0;
     padding: 0;
   }
+}
+
+.inline-position {
+  img { display: inline-block; }
 }
 
 figcaption {
@@ -133,4 +146,5 @@ figcaption {
 
 @import 'landing-page.scss';
 @import 'instructions.scss';
+@import 'purchase.scss';
 @import 'footer.scss';
