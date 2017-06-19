@@ -7,7 +7,7 @@
 
   @include for-size(phone-only) {
     background-position: 60% 85%;
-    background-size: 160%;
+    background-size: 130%;
   }
 }
 .landing-page nav a {
@@ -24,8 +24,9 @@
   background-repeat: no-repeat;
 
   @include for-size(phone-only) {
-    width: 10em;
+    width: 9em;
     height: 2.357em;
+    margin-bottom: 0;
   }
 }
 .dice-title-centered {

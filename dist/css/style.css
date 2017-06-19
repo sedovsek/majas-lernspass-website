@@ -165,7 +165,7 @@ figcaption {
 @media (max-width: 599px) {
   .landing-page {
     background-position: 60% 85%;
-    background-size: 160%;
+    background-size: 130%;
   }
 }
 
@@ -186,8 +186,9 @@ figcaption {
 }
 @media (max-width: 599px) {
   .dice-title {
-    width: 10em;
+    width: 9em;
     height: 2.357em;
+    margin-bottom: 0;
   }
 }
 
