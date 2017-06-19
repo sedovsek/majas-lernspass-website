@@ -6,7 +6,7 @@
   color: $pale-black;
 
   @include for-size(phone-only) {
-    background-position: 60% 85%;
+    background-position: 65% 85%;
     background-size: 130%;
   }
 }
@@ -24,8 +24,8 @@
   background-repeat: no-repeat;
 
   @include for-size(phone-only) {
-    width: 9em;
-    height: 2.357em;
+    width: 8em;
+    height: 2.1em;
     margin-bottom: 0;
   }
 }
@@ -74,7 +74,7 @@ button {
   padding: 0 30px;
   color: $gold;
   border: 2px solid $pale-black;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, .75);
 }
 button:focus { outline: 1px solid $gold; }
 

@@ -33,6 +33,10 @@ footer {
   left: 1em;
   bottom: 1em;
 
+  @include for-size(phone-only) {
+    position: relative;
+  }
+
   a { color: $gold; }
 }
 
