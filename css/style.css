@@ -164,7 +164,7 @@ figcaption {
 }
 @media (max-width: 599px) {
   .landing-page {
-    background-position: 60% 85%;
+    background-position: 65% 85%;
     background-size: 130%;
   }
 }
@@ -186,8 +186,8 @@ figcaption {
 }
 @media (max-width: 599px) {
   .dice-title {
-    width: 9em;
-    height: 2.357em;
+    width: 8em;
+    height: 2.1em;
     margin-bottom: 0;
   }
 }
@@ -246,7 +246,7 @@ button {
   padding: 0 30px;
   color: #c4a366;
   border: 2px solid #101010;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 button:focus {
@@ -502,6 +502,11 @@ footer {
   position: absolute;
   left: 1em;
   bottom: 1em;
+}
+@media (max-width: 599px) {
+  .footer-info {
+    position: relative;
+  }
 }
 .footer-info a {
   color: #c4a366;
