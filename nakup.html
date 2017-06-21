@@ -23,22 +23,6 @@
         <small id="delivery-price-wrapper">(+ poštnina: 5,00 €)<sup title="možen tudi osebni prevzem v Ljubljani">*</sup></small>
       </div>
 
-      <label for="name" class="text-label">Vaše ime</label>
-      <input id="name" class="text-input" type="text" placeholder="Mojca Novak" required name="Ime in priimek:"/>
-      <br/>
-
-      <label for="naslov" class="text-label">Ulica in hišna št.</label>
-      <input id="naslov" class="text-input" type="text" placeholder="Gosposvetska 13" required name="Ulica in hišna št.:"/>
-      <br/>
-
-      <label for="mesto" class="text-label">Poštna številka in kraj/mesto</label>
-      <input id="mesto" class="text-input" type="text" placeholder="1000 Ljubljana" required name="Poštna številka in kraj/mesto:"/>
-      <br/>
-
-      <label for="email" class="text-label">E-mail</label>
-      <input id="email" class="text-input" type="email" placeholder="mojca.novak@gmail.com" required name="E-mail:"/>
-      <br/>
-
       <label for="delivery" class="text-label">Dostava</label>
       <div id="delivery" class="delivery-option-wrapper">
         <input id="delivery-post" type="radio" name="delivery" checked>
@@ -51,6 +35,24 @@
           <label class="label-radio" for="delivery-pickup">osebni prevzem v centru Ljubljane</label>
         </input>
       </div>
+
+      <label for="name" class="text-label">Vaše ime</label>
+      <input id="name" class="text-input" type="text" placeholder="Mojca Novak" required name="Ime in priimek:"/>
+      <br/>
+
+      <div id="delivery-address">
+        <label for="naslov" class="text-label">Ulica in hišna št.</label>
+        <input id="naslov" class="text-input" type="text" placeholder="Gosposvetska 13" required name="Ulica in hišna št.:"/>
+        <br/>
+
+        <label for="mesto" class="text-label">Poštna številka in kraj/mesto</label>
+        <input id="mesto" class="text-input" type="text" placeholder="1000 Ljubljana" required name="Poštna številka in kraj/mesto:"/>
+        <br/>
+      </div>
+
+      <label for="email" class="text-label">E-mail</label>
+      <input id="email" class="text-input" type="email" placeholder="mojca.novak@gmail.com" required name="E-mail:"/>
+      <br/>
 
       <label for="comment" class="text-label purchase-comment-label"><small>Opomba</small></label>
       <textarea class="purchase-comment" id="comment" type="text" placeholder="Nariši dinozavra!"></textarea>
@@ -86,7 +88,7 @@
   var purchaseButton = document.getElementById('purchase-button');
   var purchaseForm = document.getElementById('purchase-form');
 
-  var formInputs = document.getElementsByTagName('input'); 
+  var formInputs = document.getElementsByTagName('input');
   for (i=0; i < formInputs.length; i++) {
     formInputs[i].addEventListener('keyup', checkFormValidity, false);
     formInputs[i].addEventListener('input', checkFormValidity, false); // auto-fill
@@ -102,13 +104,29 @@
   var shippingPrice   = document.getElementById('delivery-price-wrapper');
   var deliveryPickup  = document.getElementById('delivery-pickup');
   var deliveryOptions = document.getElementById('delivery');
-  deliveryOptions.addEventListener('change', calculatePrice);
+  var deliveryAddress = document.getElementById('delivery-address');
+  var deliveryAddressFields = deliveryAddress.getElementsByTagName('input');
+
+  deliveryOptions.addEventListener('change', function () {
+    calculatePrice();
+    toggleOptionalFields();
+    checkFormValidity();
+  }, false);
 
   function calculatePrice() {
     shippingPrice.classList.toggle('is-invisible', deliveryPickup.checked);
   }
+
+  function toggleOptionalFields() {
+    deliveryAddress.classList.toggle('is-hidden', deliveryPickup.checked);
+
+    for (i=0; i < deliveryAddressFields.length; i++) {
+      deliveryAddressFields[i].required = deliveryPickup.checked ? false : true;
+    }
+  }
   
   calculatePrice();
+  toggleOptionalFields();
 </script>
 
 </body>
