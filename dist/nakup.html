@@ -2,8 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <title>WürfelTickTack – naročilo</title>
+  <meta name="description" content="Majas Lernspaß – Deutsch, spielend leicht.">
+  <meta name="author" content="Maja Kavčič, @MajasLernspass on Instagram">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="img/png" href="./img/icons/favico.png">
 </head>
@@ -50,15 +52,15 @@
         </input>
       </div>
 
-      <label for="cena" class="text-label purchase-comment-label"><small>Opomba</small></label>
-      <textarea class="purchase-comment" id="naslov" type="text" placeholder="Nariši dinozavra!"></textarea>
+      <label for="comment" class="text-label purchase-comment-label"><small>Opomba</small></label>
+      <textarea class="purchase-comment" id="comment" type="text" placeholder="Nariši dinozavra!"></textarea>
 
       <button id="purchase-button"
               type="submit"
               class="cta cta-centered cta-disabled"
               title="Nakup igre WürfelTickTack"><span>Naročam WürfelTickTack</span></button>
 
-      <p class="purchase-notice">Po prejetem naročilu vam bomo poslali podatke za plačilo</p>
+      <p class="purchase-notice">Po prejetem naročilu vam pošljem podatke za plačilo</p>
       <p class="purchase-notice">* možen osebni prevzem v Ljubljani</p>
 
       <!-- https://formspree.io/ -->
@@ -86,7 +88,8 @@
 
   var formInputs = document.getElementsByTagName('input'); 
   for (i=0; i < formInputs.length; i++) {
-    formInputs[i].addEventListener('keyup', checkFormValidity);
+    formInputs[i].addEventListener('keyup', checkFormValidity, false);
+    formInputs[i].addEventListener('input', checkFormValidity, false); // auto-fill
   }
 
   function checkFormValidity() {

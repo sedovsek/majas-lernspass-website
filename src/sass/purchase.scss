@@ -30,7 +30,15 @@
     padding-left: 0;
   }
 
-  .delivery-option-wrapper { font-size: .7em; }
+  .form-price {
+    @include for-size(phone-only) { font-size: 1.6em; }
+  }
+
+  .delivery-option-wrapper {
+    font-size: .7em;
+
+    @include for-size(phone-only) { font-size: 1em; }
+  }
 
   .label-radio { padding-left: .3em; }
 
@@ -41,15 +49,20 @@
   }
 
   @include for-size(phone-only) {
+    .purchase-comment-label,
+    .purchase-comment {
+      display: none !important;
+    }
+
     width: auto;
 
-    label,
+    .text-label,
     .text-input {
       display: block;
       width: 100%;
     }
 
-    label {
+    .text-label {
       text-align: left;
       font-size: 1.6em;
     }
