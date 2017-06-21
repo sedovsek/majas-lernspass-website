@@ -433,6 +433,8 @@ blockquote p {
 }
 .purchase-form .label-radio {
   padding-left: .3em;
+  vertical-align: top;
+  line-height: 1.25em;
 }
 .purchase-form .purchase-comment-label {
   vertical-align: top;
