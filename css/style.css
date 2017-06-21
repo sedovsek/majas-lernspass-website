@@ -418,8 +418,18 @@ blockquote p {
 .purchase-form .form-price {
   padding-left: 0;
 }
+@media (max-width: 599px) {
+  .purchase-form .form-price {
+    font-size: 1.6em;
+  }
+}
 .purchase-form .delivery-option-wrapper {
   font-size: .7em;
+}
+@media (max-width: 599px) {
+  .purchase-form .delivery-option-wrapper {
+    font-size: 1em;
+  }
 }
 .purchase-form .label-radio {
   padding-left: .3em;
@@ -435,12 +445,16 @@ blockquote p {
   .purchase-form {
     width: auto;
   }
-  .purchase-form label,
+  .purchase-form .purchase-comment-label,
+  .purchase-form .purchase-comment {
+    display: none !important;
+  }
+  .purchase-form .text-label,
   .purchase-form .text-input {
     display: block;
     width: 100%;
   }
-  .purchase-form label {
+  .purchase-form .text-label {
     text-align: left;
     font-size: 1.6em;
   }
