@@ -1,22 +1,27 @@
 {
   "index": {
     "id": "index",
-    "title": "WürfelTickTack – Majas Lernspaß"
+    "title": "WürfelTickTack – Majas Lernspaß",
+    "url": "http://majas-lernspass.si/"
   },
   "maja": {
     "id": "maja",
-    "title": "Maja Kavčič – Majas Lernspaß"
+    "title": "Maja Kavčič – Majas Lernspaß",
+    "url": "http://majas-lernspass.si/maja"
   },
   "navodila": {
     "id": "navodila",
-    "title": "WürfelTickTack – navodila za uporabo"
+    "title": "WürfelTickTack – navodila za uporabo",
+    "url": "http://majas-lernspass.si/würfelticktack"
   },
   "nakup": {
     "id": "nakup",
-    "title": "WürfelTickTack – naročilo"
+    "title": "Nakuo WürfelTickTack igre",
+    "url": "http://majas-lernspass.si/nakup"
   },
   "hvala": {
     "id": "index",
-    "title": "WürfelTickTack – hvala za nakup!"
+    "title": "WürfelTickTack – hvala za nakup!",
+    "url": "http://majas-lernspass.si/hvala"
   }
 }
