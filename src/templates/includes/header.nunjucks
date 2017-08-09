@@ -10,7 +10,7 @@
   <link rel="icon" type="img/png" href="./img/icons/favico.png">
 
   <!-- Facebook OG tags -->
-  <meta property="og:url"          content="{{ title }}" />
+  <meta property="og:url"          content="{{ url }}" />
   <meta property="og:title"        content="{{ title }}" />
   <meta property="og:type"         content="product" />
   <meta property="og:description"  content="Majas Lernspaß – Deutsch, spielend leicht." />
