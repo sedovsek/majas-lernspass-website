@@ -31,7 +31,9 @@
       Trajanje igre je neomejeno. Omejeni ste le pri izvajanju govorne vaje ali če uporabite peščeno uro kot omejitev za čas, znotraj katerega opravljate določeno nalogo. Igra se lahko uporablja v številnih različicah, tako v pisni kot ustni obliki. Pri tem ne pozabite, da sta razmišljanje zunaj okvirjev in domišljija zelo pomembni, če ne celo ključni lastnosti lahkotnega in brezskrbnega učenja.
     </p>
 
-    <button class="cta cta-centered" title="Nakup igre WürfelTickTack"><span><a href="nakup.html" title="Kupi WürfelTickTack" target="_blank">Nakup</a></span></button>
+    <div class="cta-centered">
+      <a class="cta cta-btn" title="Nakup igre WürfelTickTack" href="nakup.html" target="_blank"><span>Nakup</span></a>
+    </div>
 
     <h2><a class="internal-link" name="vsebina"></a>VSEBINA:</h2>
     <figure class="right-position">
@@ -103,7 +105,9 @@
       Ob uporabi pričujoče igre oz. didaktičnega pripomočka ne boste zgolj pridobili novih znanj s področja nemškega besedišča in slovnice, ampak boste svoje obstoječe znanje nemškega jezika na zabaven način celostno osvežili, utrdili in nadgradili.
     </p>
 
-    <button class="cta cta-centered" title="Nakup igre WürfelTickTack"><span><a href="nakup.html" title="Kupi WürfelTickTack" target="_blank">Nakup</a></span></button>
+    <div class="cta-centered">
+      <a class="cta cta-btn" title="Nakup igre WürfelTickTack" href="nakup.html" target="_blank"><span>Nakup</span></a>
+    </div>
 
     <h2><a class="internal-link" name="ucne-razlicice"></a>UČNE RAZLIČICE:</h2>
     <p>
@@ -185,7 +189,9 @@
       Vzemite 6 majhnih kock z glagoli/aktivnostmi ali s samostalniki/predmeti ali cel set 12 majhnih kock ter list papirja in pisalo. Vrzite kocke, poglejte, kaj ste dobili na podlagi meta, zaprite oči, preštejte do 10 in si zapomnite čim več videnega. Obrnite se vstran od kock, kjer naj vas čakata list papirja in pisalo. Na list papirja zapišite, kar ste videli, nato se obrnite h kockam in preverite, ali ste pravilno zapisali.
     </p>
 
-    <button class="cta cta-centered" title="Nakup igre WürfelTickTack"><span><a href="nakup.html" title="Kupi WürfelTickTack" target="_blank">Nakup</a></span></button>
+    <div class="cta-centered">
+      <a class="cta cta-btn" title="Nakup igre WürfelTickTack" href="nakup.html" target="_blank"><span>Nakup</span></a>
+    </div>
 
   </div>
 </section>

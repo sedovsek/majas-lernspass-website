@@ -68,18 +68,24 @@ a {
   cursor: pointer;
 }
 
-button {
+.cta {
   margin-top: 1.5em; 
   height: 40px;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: $gold;
-  border: 2px solid $pale-black;
-  background-color: rgba(255, 255, 255, .75);
-}
-button:focus { outline: 1px solid $gold; }
+  text-decoration: none;
 
-.cta span a { color: $gold; text-decoration: none; }
-.cta:hover span a { color: $black; }
+  &.cta-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid $pale-black;
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  &:hover { color: $black; }
+  &:focus { outline: 1px solid $gold; }
+}
 
 .cta span {
   transition: all .3s;
@@ -94,13 +100,15 @@ button:focus { outline: 1px solid $gold; }
   content: '→';
   position: absolute;
   font-size: 1.2em;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
 // part of instructions page
 .cta-centered {
-  margin: 3.5em auto 0 auto;
-  display: inherit;
+  margin: 1.5em auto 0 auto;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 // diabled form

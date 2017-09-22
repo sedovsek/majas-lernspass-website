@@ -244,26 +244,25 @@ a {
   cursor: pointer;
 }
 
-button {
+.cta {
   margin-top: 1.5em;
   height: 40px;
-  padding: 0 30px;
-  color: #c4a366;
-  border: 2px solid #101010;
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-button:focus {
-  outline: 1px solid #c4a366;
-}
-
-.cta span a {
+  padding-left: 30px;
+  padding-right: 30px;
   color: #c4a366;
   text-decoration: none;
 }
-
-.cta:hover span a {
+.cta.cta-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #101010;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.cta:hover {
   color: #000000;
+}
+.cta:focus {
+  outline: 1px solid #c4a366;
 }
 
 .cta span {
@@ -287,12 +286,14 @@ button:focus {
   content: '→';
   position: absolute;
   font-size: 1.2em;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
 .cta-centered {
-  margin: 3.5em auto 0 auto;
-  display: inherit;
+  margin: 1.5em auto 0 auto;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 .cta-disabled span,
@@ -581,6 +582,7 @@ footer {
   padding: 1.8em;
   width: 1.8em;
   height: 1.8em;
+  color: transparent;
   background-size: 70%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
