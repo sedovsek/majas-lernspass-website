@@ -536,6 +536,7 @@ footer {
 
 .copyright {
   display: inline-block;
+  margin-bottom: 0;
   padding-left: .8em;
   font-size: .75em;
 }
