@@ -1,3 +1,7 @@
+// TODO, issues:
+// 1. dist/clean deletes everything, inclujding sub-folders
+// 2. nunjucksRender option ext: '' is fine, but we need index.html
+
 require('es6-promise').polyfill();
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
@@ -13,8 +17,8 @@ function getDataForFile(file) {
 }
 
 gulp.task('cleanup', function() {
-  gulp.src('./dist/*.html', { read: false })
-      .pipe(clean());
+  // gulp.src('./dist/*.html', { read: false })
+  //     .pipe(clean());
 
   gulp.src('./dist/css/*.css', { read: false })
       .pipe(clean());
@@ -27,7 +31,8 @@ gulp.task('nunjucks', function() {
       }))
       .pipe(data(getDataForFile))
       .pipe(nunjucksRender({
-        path: ['src/templates']
+        path: ['src/templates'],
+        ext: '',
       }))
       .pipe(gulp.dest('./dist'))
 });

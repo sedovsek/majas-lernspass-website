@@ -4,12 +4,12 @@
   <div class="social">
     <ul>
       <li>
-        <a class="social-icon social-icon-fb" href="https://www.facebook.com/MajasLernspass/" title="Majas Lernspaß Facebook stran">
+        <a class="social-icon social-icon-fb" href="https://www.facebook.com/MajasLernspass/" title="Majas Lernspaß Facebook stran" target="_blank">
           Majas Lernspaß Facebook stran
         </a>
       </li>
       <li>
-        <a class="social-icon social-icon-ig" href="https://www.instagram.com/majaslernspass/" title="Majas Lernspaß na Instagram-u">
+        <a class="social-icon social-icon-ig" href="https://www.instagram.com/majaslernspass/" title="Majas Lernspaß na Instagram-u" target="_blank">
           Majas Lernspaß na Instagram-u
         </a>
       </li>
@@ -20,10 +20,12 @@
   </div>
 
   <div class="footer-info">
-    <a href="mailto:info@majas-lernspass.si" title="Maja Kavčič">info@majas-lernspass.si</a>
+    <a target="_blank" href="mailto:info@majas-lernspass.si" title="Maja Kavčič">info@majas-lernspass.si</a>
     <p class="copyright">© 2017 Majas Lernspass. Vse pravice pridržane.</p>
     <br/>
-    <a title="Prevodi v nemščino" href="http://slowenisch-übersetzungen.de">slowenisch-übersetzungen.de</a>
+    <a target="_blank" title="Majas Lernspaß, učenje nemščine" href="http://majas-lernspass.si/">majas-lernspass.si</a>
+    <br/>
+    <a target="_blank" title="Prevodi v nemščino" href="http://slowenisch-übersetzungen.de">slowenisch-übersetzungen.de</a>
   </div>
 
 </footer>

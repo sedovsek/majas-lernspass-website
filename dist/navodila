@@ -1,8 +1,49 @@
-{% include "includes/header.nunjucks" %}
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>WürfelTickTack – navodila za uporabo</title>
+  <meta name="description" content="Majas Lernspaß – Deutsch, spielend leicht.">
+  <meta name="author" content="Maja Kavčič, @MajasLernspass on Instagram">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="img/png" href="./img/icons/favico.png">
+
+  <!-- Facebook OG tags -->
+  <meta property="og:url"          content="https://http://wurfelticktack.com/wurfelticktack" />
+  <meta property="og:title"        content="WürfelTickTack – navodila za uporabo" />
+  <meta property="og:type"         content="product" />
+  <meta property="og:description"  content="Majas Lernspaß – Deutsch, spielend leicht." />
+
+  <meta property="og:image"        content="https://wurfelticktack.com/img/majas-lernspass-fb-og.jpg" />
+  <meta property="og:image:type"   content="image/jpeg" />
+  <meta property="og:image:width"  content="800" />
+  <meta property="og:image:height" content="350" />
+
+  <meta property="og:locale"       content="sl_SI" />
+  <meta property="og:see_also"     content="http://slowenisch-übersetzungen.de" />
+  <meta property="fb:admins"       content="641422317,831343705" />
+  <meta property="fb:profile_id"   content="1605911913037652" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@MajasLernspass">
+  <meta name="twitter:creator"     content="@MajasLernspass">
+  <meta name="twitter:title"       content="WürfelTickTack – navodila za uporabo">
+  <meta name="twitter:description" content="Majas Lernspaß – Deutsch, spielend leicht.">
+  <meta name="twitter:image"       content="https://wurfelticktack.com/img/majas-lernspass-twitter-card.jpg" />
+  <meta name="twitter:image:alt"   content="Didaktična igra „Würfelticktack“ je namenjena tako učenju
+                                            in utrjevanju nemškega jezika kot tudi popestritvi
+                                            večera v prijetni družbi." />
+</head>
 
 <body class="instructions">
 
-{% include "includes/nav.nunjucks" %}
+<nav>
+  <a href="/"        class="cta nav " title="WürfelTickTack &mdash; Majas Lernspaß"><span>Kocke</span></a>
+  <a href="navodila" class="cta nav  nav-active " title="WürfelTickTack navodila"><span>Navodila</span></a>
+  <a href="maja"     class="cta nav " title="Maja Kavčič &mdash; Majas Lernspaß, avtorica"><span>Maja</span></a>
+</nav>
 
 <section class="content">
   <div class="instructions-wrapper">
@@ -196,4 +237,47 @@
   </div>
 </section>
 
-{% include "includes/footer.nunjucks" %}
+<footer>
+  <h2 class="logo"><a href="index.html" title="Majas Lernspaß">Majas Lernspaß</a></h2>
+
+  <div class="social">
+    <ul>
+      <li>
+        <a class="social-icon social-icon-fb" href="https://www.facebook.com/MajasLernspass/" title="Majas Lernspaß Facebook stran" target="_blank">
+          Majas Lernspaß Facebook stran
+        </a>
+      </li>
+      <li>
+        <a class="social-icon social-icon-ig" href="https://www.instagram.com/majaslernspass/" title="Majas Lernspaß na Instagram-u" target="_blank">
+          Majas Lernspaß na Instagram-u
+        </a>
+      </li>
+      <li>
+        <a class="social-icon social-icon-email" href="mailto:info@majas-lernspass.si" title="Pošlji Maji email" target="_blank">e-mail</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer-info">
+    <a target="_blank" href="mailto:info@majas-lernspass.si" title="Maja Kavčič">info@majas-lernspass.si</a>
+    <p class="copyright">© 2017 Majas Lernspass. Vse pravice pridržane.</p>
+    <br/>
+    <a target="_blank" title="Majas Lernspaß, učenje nemščine" href="http://majas-lernspass.si/">majas-lernspass.si</a>
+    <br/>
+    <a target="_blank" title="Prevodi v nemščino" href="http://slowenisch-übersetzungen.de">slowenisch-übersetzungen.de</a>
+  </div>
+
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101304391-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

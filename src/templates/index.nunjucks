@@ -10,7 +10,7 @@
     Didaktična igra „<strong>Würfelticktack</strong>“ je namenjena tako učenju in utrjevanju nemškega jezika kot tudi popestritvi večera v prijetni družbi.
   </p>
   <a class="cta cta-btn" href="./nakup" title="Nakup igre WürfelTickTack" target="_blank"><span>Nakup</span></a>
-  <a class="cta cta-btn" href="./wurfelticktack" title="Več o igri WürfelTickTack"><span>Več o igri…</span></a>
+  <a class="cta cta-btn" href="./navodila" title="Več o igri WürfelTickTack"><span>Več o igri…</span></a>
 </section>
 
 {% include "includes/footer.nunjucks" %}
