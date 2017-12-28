@@ -18,6 +18,62 @@
   text-align: center;
 }
 
+.smaller * {
+  font-size: .8rem;
+}
+
+.smaller li {
+  line-height: 1.25;
+}
+
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+
+.flag-icon:before {
+  content: "\00a0";
+}
+
+.flag-icon.flag-icon-squared {
+  width: 1em;
+}
+
+.flag-icon-gb {
+  background-image: url(../img/flags/4x3-gb.svg);
+}
+
+.flag-icon-gb.flag-icon-squared {
+  background-image: url(../img/flags/1x1-gb.svg);
+}
+
+.flag-icon-si {
+  background-image: url(../img/flags/4x3-si.svg);
+}
+
+.flag-icon-si.flag-icon-squared {
+  background-image: url(../img/flags/1x1-si.svg);
+}
+
+.flag-icon-de {
+  background-image: url(../img/flags/4x3-de.svg);
+}
+
+.flag-icon-de.flag-icon-squared {
+  background-image: url(../img/flags/1x1-de.svg);
+}
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -247,8 +303,8 @@ a {
 .cta {
   margin-top: 1.5em;
   height: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   color: #c4a366;
   text-decoration: none;
 }

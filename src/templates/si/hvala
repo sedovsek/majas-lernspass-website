@@ -1,0 +1,47 @@
+{% include "includes/header.nunjucks" %}
+
+<body class="instructions">
+
+{% include "includes/nav.nunjucks" %}
+
+<section class="content">
+  <div class="instructions-wrapper">
+    <h1 class="insutrctions-title">WürfelTickTack &mdash;<br/> Hvala za nakup!</h1>
+    <hr>
+    <p class="is-centered">
+      ↘ Bi o svojem nakupu obvestil/-a prijatelje? ↙
+    </p>
+
+    <br/>
+
+    <div class="is-centered">
+      <a class="social-icon social-icon-fb"
+         href="https://www.facebook.com/sharer/sharer.php?u=http%3A//majas-lernspass.si/wurfelticktack"
+         target="_blank"
+         title="Deli na Facebook-u">Deli na Facebook-u</a>
+
+      <a class="social-icon social-icon-twitter"
+         href="https://twitter.com/home?status=Naro%C4%8Dil/-a%20sem%20W%C3%BCrfelTickTack!%0A%0Ahttp%3A//majas-lernspass.si/wurfelticktack.html"
+         target="_blank"
+         title="Deli na Twitterju">Deli na Twitterju</a>
+
+      <a class="social-icon social-icon-linkedin"
+         href=""
+         target="_blank"
+         title="Deli na LinkedIn-u">Deli na LinkedIn-u</a>
+
+      <a class="social-icon social-icon-gplus"
+         href="https://plus.google.com/share?url=http%3A//majas-lernspass.si/wurfelticktack.html"
+         target="_blank"
+         title="">Deli na Googe Plus-u</a>
+
+      <a class="social-icon social-icon-email"
+         href="mailto:?subject=WürfelTickTack&body=Pozdravljen!%0D%0A%0D%0APoglej, kaj sem naročil/-a na http%3A//majas-lernspass.si/wurfelticktack.html"
+         target="_blank"
+         title="">Deli po Emailu</a>
+    </div>
+
+  </div>
+</section>
+
+{% include "includes/footer.nunjucks" %}

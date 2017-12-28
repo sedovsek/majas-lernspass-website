@@ -1,0 +1,200 @@
+{% include "includes/header.nunjucks" %}
+
+<body class="instructions">
+
+{% include "includes/nav.nunjucks" %}
+
+<section class="content">
+  <div class="instructions-wrapper">
+    <h1 class="insutrctions-title">WürfelTickTack<br/>“How to use it?”</h1>
+    <h6>March, 2017 · Maja Kavčič</h6>
+    <hr>
+    <p class="opening-statement">
+      „<strong>Würfelticktack</strong>“ is a didactic game used for practicing German language.
+    </p>
+
+    <strong>WürfelTickTack contents:</strong>
+    <ol>
+      <li>
+        <a href="#contents" title="WürfelTickTack &mdash; contents">What's in the box?</a>
+      </li>
+      <li>
+        <a href="#goals" title="WürfelTickTack &mdash; goals">WürfelTickTack goals</a>
+      </li>
+      <li>
+        <a href="#game-variations" title="WürfelTickTack &mdash; game variations">Game variations</a>
+      </li>
+    </ol>
+
+    <p>
+      <br/>
+      There is no time limit in playing this game. You are limited only when performing a speaking task, or in case you decide to use a sand clock as a time limit within which you perform a specific task. The game can be used in many different ways, both in writing and speaking. Do not forget that imagination and thinking outside the box are very important, if not the key features for easy and carefree learning.
+    </p>
+
+    <div class="cta-centered">
+      <a class="cta cta-btn" title="Purchase WürfelTickTack" href="purchase" target="_blank"><span>Purchase</span></a>
+    </div>
+
+    <h2><a class="internal-link" name="contents"></a>What's in the box?</h2>
+    <figure class="right-position">
+      <img src="../img/photos/kocke-glagoli.jpg" alt="Verb cubes/actions" style="height: 250px;"/>
+      <figcaption>Verb cubes/actions</figcaption>
+
+      <img src="../img/photos/kocke-predmeti.jpg" alt="Noun cubes/objects" style="height: 250px;"/>
+      <figcaption>Noun cubes/objects</figcaption>
+    </figure>
+    <ul>
+      <li>
+        <strong>6 small cubes</strong> with pictures that illustrate the most important <strong>verbs/actions</strong><br/>
+        <small>(in total, 36 different pictures, which means 36 different verbs/actions)</small>;
+      </li>
+      <li>
+        <strong>6 small cubes</strong> with pictures that illustrate <strong>nouns/objects</strong> connected to 6 thematic sets:
+        weather, traveling, means of transport, food and beverage, clothing and body parts<br/>
+        <small>(in total, 36 different pictures, which means 36 different nouns/objects)</small>;
+      </li>
+      <li><strong>5 large cubes</strong> to help you learn different grammatical structures:
+        <ol class="smaller">
+          <li>Grammar cube<br/>
+            &mdash; with this cube you will learn, consolidate and acquire the following grammatical structures:
+            <ul>
+              <li>✓ yes/no-questions (<i>Ja-/Nein-Fragen</i>),</li>
+              <li>✓ imperative sentences (<i>Imperativ</i>),</li>
+              <li>✓ wh-questions (<i>W-Fragen</i>),</li>
+              <li>✓ affirmative sentences (<i>Aussagesatz</i>),</li>
+              <li>✓ negation (<i>Negation</i>),</li>
+              <li>✓ comparison (<i>Vergleich</i>);</li>
+            </ul>
+          </li>
+          <li>Personal pronouns cube<br/>
+            &mdash; with this cube you will learn, consolidate and acquire personal pronouns
+            (<i>ich</i>, <i>du</i>, <i>er</i>, <i>sie</i>, <i>es</i>; <i>wir</i>, <i>ihr</i>, <i>sie</i>) in the German language;
+          </li>
+          <li>Modal verbs cube<br/>
+            &mdash; with this cube you will learn, consolidate and acquire modal verbs
+            (<i>wollen</i>, <i>sollen</i>, <i>können</i>, <i>dürfen</i>, <i>müssen</i>, <i>mögen</i>);
+          </li>
+          <li>Declension cube<br/>
+            &mdash; with this cube you will learn, consolidate and acquire declensions in the German language
+            (1. <i>Nominativ</i>, 2. <i>Gentiv</i>, 3. <i>Dativ</i>, 4. <i>Akkusativ</i>);
+          </li>
+          <li>The cube with different tenses<br/>
+            &mdash; with this cube you will learn, consolidate and acquire different tenses in the German language
+            (<i>Präsens</i>, <i>Präteritum</i>, <i>Perfekt</i>, <i>Plusquamperfekt</i>, <i>Futur I</i>, <i>Futur II</i>);
+          </li>
+        </ol>
+      </li>
+      <li>
+        Sand clock: intended for a 2.5-minute exercise or as a time-limit for performing a specific task.
+      </li>
+    </ul>
+    <figure class="inline-position">
+      <img src="../img/photos/kocka-wir.jpg"    alt="Cube, wir"    style="width: 32.5%;"/>
+      <img src="../img/photos/kocka-wollen.jpg" alt="Cube, wollen" style="width: 32.5%;"/>
+      <img src="../img/photos/kocka-futur.jpg"  alt="Cube, futur"  style="width: 32.5%;"/>
+      <figcaption>Examples of large cubes</figcaption>
+    </figure>
+
+    <h2><a class="internal-link" name="goals"></a>WürfelTickTack goals</h2>
+    <blockquote>
+      <p>
+        Goals can be set according to the language level of the user.</p>
+      <cite>&mdash;Maja Kavčič</cite>
+    </blockquote>
+
+    <p>
+      Using this game you will not only learn new grammatical structures and vocabulary items in German, but you will also refresh, strengthen and upgrade your existing knowledge of German in a fun way.
+    </p>
+
+    <div class="cta-centered">
+      <a class="cta cta-btn" title="Purchase WürfelTickTack" href="purchase" target="_blank"><span>Purchase</span></a>
+    </div>
+
+    <h2><a class="internal-link" name="game-variations"></a>WürfelTickTack game variations:</h2>
+    <p>
+      As can be seen from the goals of the game, the didactic tool you see is useful both for beginners as well as for people with intermediate and advanced knowledge of German as the difficulty is raised with the number of cubes you use in the game.
+    </p>
+
+    <ol>
+      <li>
+        <a href="#storytelling" title="WürfelTickTack &mdash; storytelling (Märchenticktack)">
+          Storytelling (<i>Märchenticktack</i>)
+        </a>
+      </li>
+      <li>
+        <a href="#declensions-and-articles" title="WürfelTickTack &mdash; learn declensions and articles (Fallticktack)">
+          Learn declensions and articles (<i>Fallticktack</i>)
+        </a>
+      </li>
+      <li>
+        <a href="#grammatical-structures" title="WürfelTickTack &mdash; learn different grammatical structures (Grammatikticktack)">
+          Learn different grammatical structures (<i>Grammatikticktack</i>)
+        </a>
+      </li>
+      <li>
+        <a href="#oral-presentations" title="WürfelTickTack &mdash; learn or improve in oral presentations (Präsentationticktack)">
+          Learn or improve in oral presentations (<i>Präsentationticktack</i>)
+        </a>
+      </li>
+      <li>
+        <a href="#modal-verbs" title="WürfelTickTack &mdash; learn modal verbs (Modalverbticktack)">
+          Learn modal verbs (<i>Modalverbticktack</i>)
+        </a>
+      </li>
+      <li>
+        <a href="#memory-game" title="WürfelTickTack &mdash; memory game (Memoryticktack)">
+          Memory game (<i>Memoryticktack</i>)
+        </a>
+      </li>
+    </ol>
+
+    <h3><a class="internal-link" name="storytelling"></a>1. Storytelling (<i>Märchenticktack</i>)</h3>
+    <p>
+      Take 6 small cubes with verbs / actions, with nouns / objects or the whole set of 12 small cubes. Throw them and start telling the story of a topic from the cube that first comes to your attention. Mind you, there is no wrong choice of the cube with which you start your story. Pictures that you see in the cubes will stir your imagination and you will easily tell your story. Since each cube represents a different picture, it is your job to include all the pictures on the cubes in your story. Pictures should not limit your imagination, as this game is meant to provoke thinking outside of the box. Not remembering the exact word on the cube should not pose any problem for you, since it is only important that the vocabulary you use in your story is connected to the picture in one way or another.
+    <p>
+    <p>
+      In the didactic game "Würfelticktack" there are no limits and wrong vocabulary. The aim of the game is that your imagination and creativity encourage you to tell the story. With this exercise you will be able to acquire and improve your speaking storytelling skills.
+    </p>
+    <p>
+      To make your story more interesting, you can choose a story genre, e.g. an adventure story, a fairy tale, a fantasy story, a criminal, beforehand. You can further enrich the story and raise the level of difficulty with the large cube that displays different tenses. Throwing this cube will determine the time sphere of your story (what happened, what will happen or what is happening). This version of the game can then be brought to another level by setting the time limit with the sand clock. If you play with 12 cubes, you can use the sand clock to divide your story into three 2.5-minute timeslots. In the first 2.5-minute timeslot, use 4 cubes (2 verbs / action cubes, 2 cubes with nouns / objects) for the introduction of your narrative, in the second 2.5-minute timeslot use the second set of 4 cubes (2 cubes with verbs / actions, 2 cubes with nouns / objects) for the middle part of your story, and in the third 2.5-minute timeslot, use the remaining 4 cubes (2 cubes with verbs / actions, 2 cubes with nouns / objects) to finish your story.
+    </p>
+
+    <h3><a class="internal-link" name="declensions-and-articles"></a>2. Acquire declensions and articles (<i>Fallticktack</i>)</h3>
+    <p>
+      Take 6 small cubes with nouns / objects (themed cubes) and the big cube with declensions. First throw all 6 themed cubes and then the big cube with declensions. Find the noun / object that corresponds with the declension you see on the large cube. Then use a noun in the right declension in a sentence. You can repeat the activity cubes again and again, and in this way consolidate declensions in the German language.
+    </p>
+    <p>
+      Once you acquire the use of declensions, you can raise the level of difficulty by adding new cubes. Add the cubes gradually: first add a cube with verbs / actions, then add a cube with personal pronouns, following by the cube with modal verbs, and finally add a cube with different tenses. By adding cubes gradually, you will not only be given a specific noun / object in a particular declension you must use in a sentence, but also a verb, a personal pronoun, a modal verb and a tense.
+    </p>
+
+    <h3><a class="internal-link" name="grammatical-structures"></a>3. Acquire different grammatical structures (<i>Grammatikticktack</i>)</h3>
+    <p>
+      Take a large cube with different grammatical structures (»yes/no questions«, »imperatives«, »wh-questions«, »affirmative sentences«, »negation« and »comparison«) and any number of small cubes with verbs/nouns/objects or the whole set of 12 small cubes. Use the theme on small cubes in the grammatical structure determined by the large cube. This means that with each throw of the large grammatical cube, you change the grammatical structure of words shown on the small cubes. You can also raise the level of difficulty so that you add more large cubes. By adding them you will get more and more restrictions that you need to follow, which will increase the difficulty level of the task that you need to perform. If you work better under time pressure, you can spice up the game by using a sand clock. Turn it around and come up with as many phrases as you can using the whole set of cubes in the time limit of 2.5 minutes.
+    </p>
+
+    <h3><a class="internal-link" name="oral-presentations"></a>4. Learn or improve in oral presentations (<i>Präsentationticktack</i>)</h3>
+    <p>
+      Take a sand clock and the cubes with nouns/objects (thematic cubes), then throw the cubes. Choose the cube that gets your attention first, turn the sand clock around, and talk about the theme determined by the cube. Speak freely for 2.5 minutes until the sand clock stops. You do not have to talk about the picture shown by the cube only; you can talk about the various associations as well. The aim of this task is to talk freely for 2.5 minutes. Gradually you will notice that you can easily talk about any specific topic and you will have no difficulty speaking in unpredictable situations. Consequently random conversations with people will no longer pose a problem for you as you will not only perfect yourself in vocabulary, but you will also gain confidence in speaking.
+    </p>
+    <p>
+      When spontaneous speaking is no longer a problem, you can raise the difficulty of your oral presentations. To do this, throw the large cubes into the mix: tenses cubes, personal pronouns cubes, declension cubes and modal verb cubes. In this way, your speaking will be limited by the tense, personal pronoun, declension, and a modal verb. Add the number of cubes/restrictions gradually.
+    </p>
+
+    <h3><a class="internal-link" name="modal-verbs"></a>5. Learn and acquire modal verbs (<i>Modalverbticktack</i>)</h3>
+    <p>
+      Take a large cube with modal verbs and a large cube with personal pronouns. Throw the two cubes. Say the correct form of the modal verb for the particular pronoun based on the combination of the throw. In this way, using modal verbs in the correct form will gradually become automatic and you won't spend time thinking about it when speaking. Gradually add the small cubes with verbs/actions and nouns/objects to use modal verbs in the sentence.
+    </p>
+
+    <h3><a class="internal-link" name="memory-game"></a>6. Memory Game (<i>Memoryticktack</i>)</h3>
+    <p>
+      Take 6 small cubes with verbs / actions or with nouns / objects or the whole set of 12 small cubes. Prepare a sheet of paper and a pen. Throw the cubes, look at the pictures determined by the throw, then close your eyes, count to 10, and try to remember what you saw. Turn away from the cubes to the sheet of paper and pen. Write down what you remember and then turn to the cubes to check the answers.
+    </p>
+
+    <div class="cta-centered">
+      <a class="cta cta-btn" title="Purchase WürfelTickTack" href="purchase" target="_blank"><span>Purchase</span></a>
+    </div>
+
+  </div>
+</section>
+
+{% include "includes/footer.nunjucks" %}

@@ -29,3 +29,6 @@
 .is-hidden { display: none; }
 .is-invisible { visibility: hidden; }
 .is-centered { text-align: center; }
+
+.smaller * { font-size: .8rem; }
+.smaller li { line-height: 1.25; }

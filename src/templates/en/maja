@@ -1,0 +1,41 @@
+{% include "includes/header.nunjucks" %}
+
+<body class="instructions">
+
+{% include "includes/nav.nunjucks" %}
+
+<section class="content">
+  <div class="instructions-wrapper">
+    <h1 class="insutrctions-title">Majas Lernspaß<br/>&mdash; Maja, author</h1>
+    <hr>
+    <p>
+      My name is <strong>Maja Kavčič</strong>.
+      Five years ago I entered the world of teaching German, although I used to say I would never teach, because I though I was a translator by heart.
+      And what do you know; my job became German language teaching, which I now happily perform. I put a lot of energy and effort into my work, as I am constantly searching for solutions <strong>how to help students learn</strong> the German language, so that the learning methods would be as helpful and useful for the learner, motivational for me and fun for both of us. This slogan is also visible in my "Majas Lernspaß" logo.
+
+      Throughout the years of teaching I gained experience in conducting courses for <strong>younger learners</strong>, <strong>individuals</strong> (on-site or remote) and <strong>groups</strong> at different language levels ranging from <strong>A1 to C2</strong>.
+
+      I help my students to acquire <strong>Goethe Institute</strong> certificates or fulfill their personal language goals.
+    </p>
+    <figure class="right-position">
+      <img src="../img/photos/maja.jpg" alt="Maja Kavčič" style="height: 326px;"/>
+      <figcaption>
+        Maja Kavčič,<br/>
+        <small>
+          fotografija: <a href="http://www.ullawolk.si/en/" target="_blank" title="Boudoir and Portrait photography">Ulla Wolk</a>
+        </small>
+      </figcaption>
+    </figure>
+    <p>
+      My students are very diverse and have different language problems. After five years of teaching, having passed the DaF certificate for teachers and having done a lot of additional teacher trainings, I decided to try out my first didactic game, or tool, that would make German language learning <strong>instructive</strong>, <strong>interactive</strong>, <strong>interesting</strong> and <strong>fun</strong>. With the help of my product, you will be able to master the German language and improve your existing skills, as you can work with one cube or add any number of cubes to increase the difficulty of the task ahead of you.
+    </p>
+
+    <p>
+      If you have any feedback, suggestion, or simply want to chat, feel free to send me an email at
+      <a target="_blank" href="mailto:maja@majaslernspass.si" title="Maja">maja@majaslernspass.si</a>.
+    </p>
+
+  </div>
+</section>
+
+{% include "includes/footer.nunjucks" %}

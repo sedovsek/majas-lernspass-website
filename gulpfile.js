@@ -1,7 +1,3 @@
-// TODO, issues:
-// 1. dist/clean deletes everything, inclujding sub-folders
-// 2. nunjucksRender option ext: '' is fine, but we need index.html
-
 require('es6-promise').polyfill();
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
@@ -12,29 +8,33 @@ var gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     autoprefixer = require('autoprefixer');
 
-function getDataForFile(file) {
-  return file.relative.split('.')[0];
-}
-
 gulp.task('cleanup', function() {
-  // gulp.src('./dist/*.html', { read: false })
-  //     .pipe(clean());
-
-  gulp.src('./dist/css/*.css', { read: false })
+  gulp.src(['./dist/*', '!./dist/img', '!./dist/img/**'], { read: false })
       .pipe(clean());
 });
 
 gulp.task('nunjucks', function() {
-  gulp.src('./src/templates/*.nunjucks')
-      .pipe(data(function (file) {
-        return require('./src/data/data.json')[getDataForFile(file)];
-      }))
-      .pipe(data(getDataForFile))
-      .pipe(nunjucksRender({
-        path: ['src/templates'],
-        ext: '',
-      }))
-      .pipe(gulp.dest('./dist'))
+  generateTemplates('si');
+  generateTemplates('en');
+
+  // 
+  function generateTemplates (lang) {
+    var dest = lang === 'en' ? 'en/' : '';
+    gulp.src([
+          './src/templates/'  + lang + '/**',
+          '!./src/templates/' + lang + '/includes',
+          '!./src/templates/' + lang + '/includes/**'
+        ])
+        .pipe(data(function (file) {
+          return require('./src/data/data-' + lang + '.json')[getDataForFile(file)];
+        }))
+        .pipe(data(getDataForFile))
+        .pipe(nunjucksRender({
+          path: ['src/templates/' + lang + ''],
+          inheritExtension: true,
+        }))
+        .pipe(gulp.dest('./dist/' + dest ));
+  };
 });
 
 gulp.task('sass', function() {
@@ -47,7 +47,14 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist/css/'));
 });
 
+gulp.watch('src/data/*', ['nunjucks']);
 gulp.watch('src/templates/**/*', ['nunjucks']);
 gulp.watch('src/sass/*.scss', ['sass']);
 
 gulp.task('default', ['cleanup', 'nunjucks', 'sass']);
+
+
+//
+function getDataForFile(file) {
+  return file.relative.split('.')[0];
+}

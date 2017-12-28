@@ -10,7 +10,7 @@
   <link rel="icon" type="img/png" href="./img/icons/favico.png">
 
   <!-- Facebook OG tags -->
-  <meta property="og:url"          content="https://http://wurfelticktack.com/wurfelticktack" />
+  <meta property="og:url"          content="https://wurfelticktack.com/navodila" />
   <meta property="og:title"        content="WürfelTickTack – navodila za uporabo" />
   <meta property="og:type"         content="product" />
   <meta property="og:description"  content="Majas Lernspaß – Deutsch, spielend leicht." />
@@ -40,9 +40,21 @@
 <body class="instructions">
 
 <nav>
-  <a href="/"        class="cta nav " title="WürfelTickTack &mdash; Majas Lernspaß"><span>Kocke</span></a>
-  <a href="navodila" class="cta nav  nav-active " title="WürfelTickTack navodila"><span>Navodila</span></a>
-  <a href="maja"     class="cta nav " title="Maja Kavčič &mdash; Majas Lernspaß, avtorica"><span>Maja</span></a>
+  <a class="language-en" href="https://wurfelticktack.com/en/how-to-use" title="Click to read this page in English">
+    <span class="flag-icon flag-icon-gb"></span>
+  </a>
+
+  <a href="/"
+     class="cta nav "
+     title="WürfelTickTack &mdash; Majas Lernspaß"><span>Kocke</span></a>
+
+  <a href="navodila"
+     class="cta nav  nav-active "
+     title="WürfelTickTack navodila"><span>Navodila</span></a>
+
+  <a href="maja"
+     class="cta nav "
+     title="Maja Kavčič, avtorica"><span>Maja</span></a>
 </nav>
 
 <section class="content">
@@ -94,7 +106,7 @@
         <small>(skupno 36 različnih sličic, torej 36 različnih samostalnikov/predmetov)</small>;
       </li>
       <li><strong>5 velikih kock</strong>, s katerimi boste spoznali različne slovnične sklope oz. oblike:
-        <ol>
+        <ol class="smaller">
           <li>slovnična kocka<br/>
             &mdash; s to kocko boste spoznali, utrdili in osvojili sledeče slovnične oblike:
             <ul>
@@ -138,7 +150,7 @@
     <h2><a class="internal-link" name="cilji-igre"></a>CILJI IGRE:</h2>
     <blockquote>
       <p>
-        cilji igre so zelo različni in se prilagajajo stopnji znanja uporabnika.</p>
+        Cilji igre so zelo različni in se prilagajajo stopnji znanja uporabnika.</p>
       <cite>&mdash;Maja Kavčič</cite>
     </blockquote>
 
@@ -260,7 +272,7 @@
 
   <div class="footer-info">
     <a target="_blank" href="mailto:info@majas-lernspass.si" title="Maja Kavčič">info@majas-lernspass.si</a>
-    <p class="copyright">© 2017 Majas Lernspass. Vse pravice pridržane.</p>
+    <p class="copyright">© 2018 Majas Lernspass. Vse pravice pridržane.</p>
     <br/>
     <a target="_blank" title="Majas Lernspaß, učenje nemščine" href="http://majas-lernspass.si/">majas-lernspass.si</a>
     <br/>

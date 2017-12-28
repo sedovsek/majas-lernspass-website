@@ -1,0 +1,17 @@
+<nav>
+  <a class="language-en" href="{{ urlEn }}" title="Click to read this page in English">
+    <span class="flag-icon flag-icon-gb"></span>
+  </a>
+
+  <a href="/"
+     class="cta nav {% if id === 'index' %} nav-active {% endif %}"
+     title="WürfelTickTack &mdash; Majas Lernspaß"><span>Kocke</span></a>
+
+  <a href="navodila"
+     class="cta nav {% if id === 'navodila' %} nav-active {% endif %}"
+     title="WürfelTickTack navodila"><span>Navodila</span></a>
+
+  <a href="maja"
+     class="cta nav {% if id === 'maja' %} nav-active {% endif %}"
+     title="Maja Kavčič, avtorica"><span>Maja</span></a>
+</nav>

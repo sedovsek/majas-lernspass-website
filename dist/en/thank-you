@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-  <title>WürfelTickTack – hvala za nakup!</title>
+  <title></title>
   <meta name="description" content="Majas Lernspaß – Deutsch, spielend leicht.">
   <meta name="author" content="Maja Kavčič, @MajasLernspass on Instagram">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="img/png" href="./img/icons/favico.png">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="img/png" href="../img/icons/favico.png">
 
   <!-- Facebook OG tags -->
-  <meta property="og:url"          content="https://wurfelticktack.com/hvala" />
-  <meta property="og:title"        content="WürfelTickTack – hvala za nakup!" />
+  <meta property="og:url"          content="" />
+  <meta property="og:title"        content="" />
   <meta property="og:type"         content="product" />
   <meta property="og:description"  content="Majas Lernspaß – Deutsch, spielend leicht." />
 
@@ -29,32 +29,30 @@
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:site"        content="@MajasLernspass">
   <meta name="twitter:creator"     content="@MajasLernspass">
-  <meta name="twitter:title"       content="WürfelTickTack – hvala za nakup!">
+  <meta name="twitter:title"       content="">
   <meta name="twitter:description" content="Majas Lernspaß – Deutsch, spielend leicht.">
   <meta name="twitter:image"       content="https://wurfelticktack.com/img/majas-lernspass-twitter-card.jpg" />
-  <meta name="twitter:image:alt"   content="Didaktična igra „Würfelticktack“ je namenjena tako učenju
-                                            in utrjevanju nemškega jezika kot tudi popestritvi
-                                            večera v prijetni družbi." />
+  <meta name="twitter:image:alt"   content="„Würfelticktack“ is a didactic game used for practicing German language." />
 </head>
 
 <body class="instructions">
 
 <nav>
-  <a class="language-en" href="https://wurfelticktack.com/en/thank-you" title="Click to read this page in English">
-    <span class="flag-icon flag-icon-gb"></span>
+  <a class="language-en" href="" title="Preberi to stran v slovenskem jeziku">
+    <span class="flag-icon flag-icon-si"></span>
   </a>
 
-  <a href="/"
+  <a href="https://wurfelticktack.com/en"
      class="cta nav "
-     title="WürfelTickTack &mdash; Majas Lernspaß"><span>Kocke</span></a>
+     title="WürfelTickTack"><span>Home</span></a>
 
-  <a href="navodila"
+  <a href="how-to-use"
      class="cta nav "
-     title="WürfelTickTack navodila"><span>Navodila</span></a>
+     title="How to use WürfelTickTack?"><span>About</span></a>
 
   <a href="maja"
      class="cta nav "
-     title="Maja Kavčič, avtorica"><span>Maja</span></a>
+     title="Maja Kavčič, author"><span>Maja</span></a>
 </nav>
 
 <section class="content">
@@ -103,28 +101,28 @@
   <div class="social">
     <ul>
       <li>
-        <a class="social-icon social-icon-fb" href="https://www.facebook.com/MajasLernspass/" title="Majas Lernspaß Facebook stran" target="_blank">
-          Majas Lernspaß Facebook stran
+        <a class="social-icon social-icon-fb" href="https://www.facebook.com/MajasLernspass/" title="Majas Lernspaß Facebook page" target="_blank">
+          Majas Lernspaß Facebook page
         </a>
       </li>
       <li>
-        <a class="social-icon social-icon-ig" href="https://www.instagram.com/majaslernspass/" title="Majas Lernspaß na Instagram-u" target="_blank">
-          Majas Lernspaß na Instagram-u
+        <a class="social-icon social-icon-ig" href="https://www.instagram.com/majaslernspass/" title="Majas Lernspaß on Instagram" target="_blank">
+          Majas Lernspaß on Instagram
         </a>
       </li>
       <li>
-        <a class="social-icon social-icon-email" href="mailto:info@majas-lernspass.si" title="Pošlji Maji email" target="_blank">e-mail</a>
+        <a class="social-icon social-icon-email" href="mailto:info@majas-lernspass.si" title="Send an email to Maja" target="_blank">e-mail</a>
       </li>
     </ul>
   </div>
 
   <div class="footer-info">
     <a target="_blank" href="mailto:info@majas-lernspass.si" title="Maja Kavčič">info@majas-lernspass.si</a>
-    <p class="copyright">© 2018 Majas Lernspass. Vse pravice pridržane.</p>
+    <p class="copyright">© 2018 Majas Lernspass. All rights reserved.</p>
     <br/>
-    <a target="_blank" title="Majas Lernspaß, učenje nemščine" href="http://majas-lernspass.si/">majas-lernspass.si</a>
+    <a target="_blank" title="Majas Lernspaß, learning German" href="http://majas-lernspass.si/">majas-lernspass.si</a>
     <br/>
-    <a target="_blank" title="Prevodi v nemščino" href="http://slowenisch-übersetzungen.de">slowenisch-übersetzungen.de</a>
+    <a target="_blank" title="Translating from Slovene to German or vice-versa" href="http://slowenisch-übersetzungen.de">slowenisch-übersetzungen.de</a>
   </div>
 
 </footer>

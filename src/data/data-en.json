@@ -1,0 +1,32 @@
+{
+  "index": {
+    "id": "index",
+    "title": "WürfelTickTack – Majas Lernspaß",
+    "url": "https://wurfelticktack.com/en/",
+    "urlSi": "https://wurfelticktack.com/"
+  },
+  "maja": {
+    "id": "maja",
+    "title": "Maja Kavčič – Majas Lernspaß",
+    "url": "https://wurfelticktack.com/en/maja",
+    "urlSi": "https://wurfelticktack.com/maja"
+  },
+  "how-to-use": {
+    "id": "how-to-use",
+    "title": "WürfelTickTack – How to use?",
+    "url": "https://wurfelticktack.com/en/how-to-use",
+    "urlSi": "https://wurfelticktack.com/navodila"
+  },
+  "purchase": {
+    "id": "purchase",
+    "title": "Purchase WürfelTickTack",
+    "url": "https://wurfelticktack.com/en/purchase",
+    "urlSi": "https://wurfelticktack.com/nakup"
+  },
+  "thank-you": {
+    "id": "thank-you",
+    "title": "WürfelTickTack – thank you for your purchase!",
+    "url": "https://wurfelticktack.com/en/thank-you",
+    "urlSi": "https://wurfelticktack.com/hvala"
+  }
+}

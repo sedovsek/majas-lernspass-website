@@ -1,0 +1,130 @@
+{% include "includes/header.nunjucks" %}
+
+<body class="instructions">
+
+<section class="content">
+  <div class="instructions-wrapper">
+    <h1 class="dice-title dice-title-bigger dice-title-centered m-hide-text">WürfelTickTack</h1>
+    <hr/>
+    <form id="purchase-form" class="purchase-form" method="POST" action="https://formspree.io/info@majas-lernspass.si">
+      <label for="cena" class="text-label"><strong>Price</strong></label>
+      <div class="form-price">
+        <strong id="price">50,00 €</strong>
+        <small id="delivery-price-wrapper">(+ shipping: 9,00 €)<sup title="personal pickup possible in Ljubljana">*</sup></small>
+      </div>
+
+      <label for="delivery" class="text-label">Delivery</label>
+      <div id="delivery" class="delivery-option-wrapper">
+        <input id="delivery-post" type="radio" name="delivery" checked>
+          <label class="label-radio" for="delivery-post">by post</label>
+        </input>
+
+        <br/>
+
+        <input id="delivery-pickup" type="radio" name="delivery">
+          <label class="label-radio" for="delivery-pickup">personal pickup in Ljubljana</label>
+        </input>
+      </div>
+
+      <label for="name" class="text-label">Your name</label>
+      <input id="name" class="text-input" type="text" placeholder="Jane Doe" required name="Name and surname:"/>
+      <br/>
+
+      <div id="delivery-address">
+        <label for="naslov" class="text-label">Address</label>
+        <input id="naslov" class="text-input" type="text" placeholder="2769, Tree Frog Lane" required name="Address:"/>
+        <br/>
+
+        <label for="mesto" class="text-label">Post number and city</label>
+        <input id="mesto" class="text-input" type="text" placeholder="Manchester" required name="Post number and city:"/>
+        <br/>
+
+        <label for="drzava" class="text-label">Country</label>
+        <input id="drzava" class="text-input" type="text" placeholder="UK" required name="Country:"/>
+        <br/>
+      </div>
+
+      <label for="email" class="text-label">E-mail</label>
+      <input id="email" class="text-input" type="email" placeholder="jane.doe@gmail.com" required name="E-mail:"/>
+      <br/>
+
+      <label for="comment" class="text-label purchase-comment-label"><small>Other</small></label>
+      <textarea class="purchase-comment" id="comment" type="text" placeholder="Draw the unicorn!"></textarea>
+
+      <div class="cta-centered">
+        <button id="purchase-button"
+                type="submit"
+                class="cta cta-disabled"
+                title="Nakup igre WürfelTickTack"><span>Purchase WürfelTickTack</span></button>
+      </div>
+
+      <p class="purchase-notice">You will receive payment information after your order</p>
+      <p class="purchase-notice">* personal pickup in Ljubljana is possible</p>
+
+      <!-- https://formspree.io/ -->
+      <input type="hidden" name="_subject" value="Naročilo: WürfelTickTack" />
+      <input type="hidden" name="_next" value="thank-you" />
+    </form>
+
+    <hr/>
+
+    <div class="purchase-help">
+      <h3>Having troubles with the order?</h3>
+      <p>
+        Contact me at <a target="_blank" href="mailto:info@majas-lernspass.si" title="Maja Kavčič">info@majas-lernspass.si</a>
+        <br/>
+        or give me a call, <strong>+386 31 664 871</strong> &mdash;Maja Kavčič
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<script type="text/javascript">
+  // Form validation
+  var purchaseButton = document.getElementById('purchase-button');
+  var purchaseForm = document.getElementById('purchase-form');
+
+  var formInputs = document.getElementsByTagName('input');
+  for (i=0; i < formInputs.length; i++) {
+    formInputs[i].addEventListener('keyup', checkFormValidity, false);
+    formInputs[i].addEventListener('input', checkFormValidity, false); // auto-fill
+  }
+
+  function checkFormValidity() {
+    purchaseButton.classList.toggle('cta-disabled', !purchaseForm.checkValidity())
+  }
+
+  checkFormValidity();
+
+  // Price calculation
+  var shippingPrice   = document.getElementById('delivery-price-wrapper');
+  var deliveryPickup  = document.getElementById('delivery-pickup');
+  var deliveryOptions = document.getElementById('delivery');
+  var deliveryAddress = document.getElementById('delivery-address');
+  var deliveryAddressFields = deliveryAddress.getElementsByTagName('input');
+
+  deliveryOptions.addEventListener('change', function () {
+    calculatePrice();
+    toggleOptionalFields();
+    checkFormValidity();
+  }, false);
+
+  function calculatePrice() {
+    shippingPrice.classList.toggle('is-invisible', deliveryPickup.checked);
+  }
+
+  function toggleOptionalFields() {
+    deliveryAddress.classList.toggle('is-hidden', deliveryPickup.checked);
+
+    for (i=0; i < deliveryAddressFields.length; i++) {
+      deliveryAddressFields[i].required = deliveryPickup.checked ? false : true;
+    }
+  }
+  
+  calculatePrice();
+  toggleOptionalFields();
+</script>
+
+</body>
+</html>

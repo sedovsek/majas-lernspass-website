@@ -1,0 +1,17 @@
+<nav>
+  <a class="language-en" href="{{ urlSi }}" title="Preberi to stran v slovenskem jeziku">
+    <span class="flag-icon flag-icon-si"></span>
+  </a>
+
+  <a href="https://wurfelticktack.com/en"
+     class="cta nav {% if id === 'index' %} nav-active {% endif %}"
+     title="WürfelTickTack"><span>Home</span></a>
+
+  <a href="how-to-use"
+     class="cta nav {% if id === 'how-to-use' %} nav-active {% endif %}"
+     title="How to use WürfelTickTack?"><span>About</span></a>
+
+  <a href="maja"
+     class="cta nav {% if id === 'maja' %} nav-active {% endif %}"
+     title="Maja Kavčič, author"><span>Maja</span></a>
+</nav>
